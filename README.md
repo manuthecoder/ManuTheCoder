@@ -1,4 +1,4 @@
-<a href="#" style='margin:0;'><img src="https://github-readme-stats.vercel.app/api?username=ManuTheCoder&show_icons=true" style='margin:0;' width="50%" height="360" align="right"></a>
+<a href="#"><img src="https://github-readme-stats.vercel.app/api?username=ManuTheCoder&show_icons=true" style='margin:0;' width="50%" height="360" align="right"></a>
 <h2>ManuTheCoder</h2>
 <h5>I'm a full-stack developer and a DevOps engineer!</h5>
 <!-- <a href="#" style='margin:0;'><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ManuTheCoder&layout=compact" style='margin:0;' width="390" height="190" align="center"></a> -->
