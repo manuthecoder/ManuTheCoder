@@ -7,5 +7,7 @@
   <li>Check out my <a href="https://github.com/ManuTheCoder/docjs">latest repo</a> <img src="https://github.githubassets.com/images/mona-whisper.gif" width="20px" align='middle'></li>
   <li>I'm currently in middle school 🏫</li>
   <li>I'm a full stack developer & a DevOps Engineer!</li>
+  <li>I also play Minecraft ⛏🧱 </li>
+  <li>And, I also like Star Trek 🖖</li>
 </ul>
 <!-- <a href="https://smartlist.ga"><img src="https://i.ibb.co/PZr6Gdn/save-money-by-keeping-track-of-what-you-have-at-home-1.png" width="50%"></a> -->
