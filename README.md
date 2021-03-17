@@ -1,7 +1,7 @@
 ## Hi, I'm ManuTheCoder 👨‍💻
 
-<a href="#"><img src="https://github-readme-stats.vercel.app/api?username=ManuTheCoder&show_icons=true&theme=radical" width="460" height="360" align="center"></a>
-<a href="#"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ManuTheCoder&layout=compact" width="390" height="190" align="center"></a>
+<a href="#" style='margin:0;'><img src="https://github-readme-stats.vercel.app/api?username=ManuTheCoder&show_icons=true&theme=radical" width="460" height="360" align="center"></a>
+<a href="#" style='margin:0;'><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ManuTheCoder&layout=compact" width="390" height="190" align="center"></a>
 
 And I enjoy making apps for everyone!
 
