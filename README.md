@@ -1,4 +1,7 @@
 ## Hi, I'm ManuTheCoder 👨‍💻
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ManuTheCoder&show_icons=true&theme=radical)
+
 And I enjoy making apps for everyone!
 
 <ul>
