@@ -1,6 +1,7 @@
 ## Hi, I'm ManuTheCoder 👨‍💻
 
 ![ManuTheCoder's GitHub stats](https://github-readme-stats.vercel.app/api?username=ManuTheCoder&show_icons=true&theme=radical&hide_rank=true)
+[![ManuTheCoder's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ManuTheCoder)](https://github.com/ManuTheCoder/github-readme-stats)
 
 And I enjoy making apps for everyone!
 
