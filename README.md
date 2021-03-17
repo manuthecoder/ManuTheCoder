@@ -2,7 +2,7 @@
 And I enjoy making apps for everyone!
 
 <ul>
-  <li> I'm currently working on <a href="https://smartlist.ga">Smartlist</a></li>
+  <li>I'm currently working on <a href="https://smartlist.ga">Smartlist</a></li>
   <li>Check out my [latest repository](https://github.com/ManuTheCoder/docjs) <img src="https://github.githubassets.com/images/mona-whisper.gif" width="20px"></li>
   <li>I'm currently in middle school 🏫</li>
   <li>I'm a full stack developer & a DevOps Engineer!</li>
