@@ -2,7 +2,9 @@
 And I enjoy making apps for everyone!
 * I'm currently working on [Smartlist](https://smartlist.ga)
 
+<ul>
 <li> Check out my [latest repository](https://github.com/ManuTheCoder/docjs) <img src="https://github.githubassets.com/images/mona-whisper.gif" width="10px"></li>
+</ul>
 
 * I'm currently in middle school 🏫
 
