@@ -1,3 +1,4 @@
+<img src="https://i.ibb.co/DpG3Hm7/39418fc243f36ed2e972f162190e89a8-1.jpg" width="100%">
 <a href="#"><img src="https://github-readme-stats.vercel.app/api?username=ManuTheCoder&show_icons=true" style='margin:0;' width="50%" height="360" align="right"></a>
 <h1>ManuTheCoder</h1>
 <h5>I'm a 13 year old full-stack developer!</h5>
