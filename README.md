@@ -7,7 +7,7 @@
   <li>I'm currently working on <a href="https://smartlist.ga">Smartlist</a></li>
   <li>Check out my <a href="https://github.com/ManuTheCoder/docjs">latest repo</a> <img src="https://github.githubassets.com/images/mona-whisper.gif" width="15px" align='middle'></li>
   <li>I'm currently in middle school 🏫</li>
-  <li>Favorite color? <img src="https://via.placeholder.com/15/1589F0/3483eb?=%233483eb" width="10px"></li>
+  <li>Favorite color? <img src="https://via.placeholder.com/15/1589F0/3483eb?=" width="10px">#3483eb</li>
   <li>I'm a full stack developer & a DevOps Engineer!</li>
   <li>I also play Minecraft ⛏🧱 </li>
   <li>And, I also like Star Trek 🖖</li>
