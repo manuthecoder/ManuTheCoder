@@ -1,6 +1,6 @@
 <a href="#"><img src="https://github-readme-stats.vercel.app/api?username=ManuTheCoder&show_icons=true" style='margin:0;' width="50%" height="360" align="right"></a>
 <h1>ManuTheCoder</h1>
-<h5>I'm a full-stack developer and a DevOps engineer!</h5>
+<h5>I'm a 13 year old full-stack developer!</h5>
 <!-- <a href="#" style='margin:0;'><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ManuTheCoder&layout=compact" style='margin:0;' width="390" height="190" align="center"></a> -->
 <ul>
   <li>I own multiple apps, websites, and servers across the world</li>
