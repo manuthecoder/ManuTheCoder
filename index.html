@@ -82,7 +82,6 @@
         footer {
             text-align: center;
             background: #f3f4f5;
-            padding-top: 10px
         }
         
         .icon {
@@ -153,7 +152,7 @@
         }
         
         .m12 {
-            padding: 5px;
+            padding: 10px;
         }
         
         #articles .card {
@@ -165,19 +164,42 @@
             padding: 10px;
         }
         
+        #visual {
+            margin-top: 10px
+        }
+        
+        .content {
+            height: 170px
+        }
+        
         .card {
             width: 100%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            border-radius: 15px;
+            transition: all .2s;
+            display: inline-block;
+        }
+        
+        .visit_btn {
+            display: block;
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform .2s;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            color: white;
+            background-color: #303030;
+        }
+        
+        .card:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px)
         }
         
         footer a {
             text-decoration: none;
-            color: #303030
-        }
-        
-        .projectContainer .card {
-            height: 320px
+            color: #303030;
+            margin: 10px
         }
         
         @media only screen and (min-width: 993px) {
@@ -289,8 +311,11 @@
                                 Smartlist
                             </h4>
                             <p>
-                                The sophisticated home inventory app
+                                Smartlist is a sophisticated home inventory app whick lets you keep track of what you have in your home for free
                             </p>
+                        </div>
+                        <div class="footer">
+                            <a href="#" class="visit_btn">Visit Website</a>
                         </div>
                     </div>
                 </div>
@@ -301,8 +326,11 @@
                                 Devlist
                             </h4>
                             <p>
-                                The todo list for all developers
+                                Devlist is a todo list app made for developers to keep track of their projects &amp; become organized.
                             </p>
+                        </div>
+                        <div class="footer">
+                            <a href="#" class="visit_btn">Visit Website</a>
                         </div>
                     </div>
                 </div>
@@ -313,8 +341,11 @@
                                 OnlineFTP
                             </h4>
                             <p>
-                                Edit files on your FTP server in-browser!
+                                OnlineFTP is an in-browser FTP that lets you edit files on your server in the browser on any device
                             </p>
+                        </div>
+                        <div class="footer">
+                            <a href="#" class="visit_btn">Visit Website</a>
                         </div>
                     </div>
                 </div>
@@ -327,8 +358,11 @@
                                 DocJS
                             </h4>
                             <p>
-                                Pure JS documentation generator for your site!
+                                DocJS is a documentation generator for your website using pure JS, no external dependencies
                             </p>
+                        </div>
+                        <div class="footer">
+                            <a href="#" class="visit_btn">Visit Website</a>
                         </div>
                     </div>
                 </div>
@@ -339,8 +373,9 @@
                                 Dynamic Poll
                             </h4>
                             <p>
-                                A polling app made for schools, to make class decisions easier
+                                Dynamic Poll is a polling app made for both schools and offices to make group decisions easy
                             </p>
+                            <a href="#" class="visit_btn">Visit Website</a>
                         </div>
                     </div>
                 </div>
@@ -351,8 +386,11 @@
                                 WebCode
                             </h4>
                             <p>
-                                An online coding IDE for people stuck with chromebooks
+                                Webcode is an online coding playground that lets you code HTML, CSS, JS in your browser, even on a chromebook
                             </p>
+                        </div>
+                        <div class="footer">
+                            <a href="#" class="visit_btn">Visit Website</a>
                         </div>
                     </div>
                 </div>
@@ -368,30 +406,30 @@
             <div id="articles" class="row"></div>
         </div>
     </main>
-    <svg id="visual" viewBox="0 0 100% 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 65L83.3 74.5C166.7 84 333.3 103 500 114.8C666.7 126.7 833.3 131.3 1000 123.8C1166.7 116.3 1333.3 96.7 1500 94.8C1666.7 93 1833.3 109 1916.7 117L2000 125L2000 201L1916.7 201C1833.3 201 1666.7 201 1500 201C1333.3 201 1166.7 201 1000 201C833.3 201 666.7 201 500 201C333.3 201 166.7 201 83.3 201L0 201Z" fill="#f3f4f5" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+    <svg id="visual" style="margin-bottom: -10px" viewBox="0 0 100% 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 65L83.3 74.5C166.7 84 333.3 103 500 114.8C666.7 126.7 833.3 131.3 1000 123.8C1166.7 116.3 1333.3 96.7 1500 94.8C1666.7 93 1833.3 109 1916.7 117L2000 125L2000 201L1916.7 201C1833.3 201 1666.7 201 1500 201C1333.3 201 1166.7 201 1000 201C833.3 201 666.7 201 500 201C333.3 201 166.7 201 83.3 201L0 201Z" fill="#f3f4f5" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
     <footer>
         <a target="_blank" href="https://github.com/manuthecoder">
             <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             </div>
         </a>
         <a href="mailto:manuthecoder@protonmail.com" target="_blank">
             <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </div>
         </a>
         <a href="https://codepen.io/manuthecoder" target="_blank">
             <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg>
             </div>
         </a>
         <a href="https://discord.gg/ACDzsMQvTz" target="_blank">
             <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
             </div>
         </a>
         <a href="https://dev.to/manuthecoder" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
         </a>
         <br>
         <div style="padding: 10px;">&copy; 2021 ManuTheCoder</div>
@@ -406,12 +444,8 @@
                 var articles = JSON.parse(this.responseText);
                 for (var i in articles) {
                     document.getElementById("articles").innerHTML += `
-<div class="col s4" style="padding: 10px">
-<div class="card">
-<div class="content">
-<a href="${articles[i].url}" target="_blank">${articles[i].title}</a>
-      </div>
-      </div>
+<div class="col s4" style="padding: 15px">
+<a href="${articles[i].url}" target="_blank" class="card content">${articles[i].title}</a>
       </div>
 `;
                 }
@@ -420,6 +454,10 @@
         xhttp.open("GET", "https://dev.to/api/articles?username=manuthecoder&per_page=3", true);
         xhttp.send();
     </script>
+</body>
+
+</html> } } }; xhttp.open("GET", "https://dev.to/api/articles?username=manuthecoder&per_page=3", true); xhttp.send();
+</script>
 </body>
 
 </html>
