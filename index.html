@@ -191,6 +191,15 @@
             background-color: #303030;
         }
         
+        .card:focus {
+            outline: 0;
+            box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.97), 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .visit_btn:hover {
+            opacity: .9;
+        }
+        
         .card:hover {
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             transform: translateY(-5px)
@@ -273,10 +282,12 @@
 
 <body data-aos="fade-in">
     <nav>
-        <ul>
-            <li class="right"><a href="#">About</a></li>
-            <li><a href="#">ManuTheCoder</a></li>
-        </ul>
+        <div class="container" style="width: 90%">
+            <ul>
+                <li class="right"><a href="#">About</a></li>
+                <li><a href="#">ManuTheCoder</a></li>
+            </ul>
+        </div>
     </nav>
     <main id="main">
         <div class="spacer"></div>
@@ -456,10 +467,6 @@
         xhttp.open("GET", "https://dev.to/api/articles?username=manuthecoder&per_page=3", true);
         xhttp.send();
     </script>
-</body>
-
-</html> } } }; xhttp.open("GET", "https://dev.to/api/articles?username=manuthecoder&per_page=3", true); xhttp.send();
-</script>
 </body>
 
 </html>
