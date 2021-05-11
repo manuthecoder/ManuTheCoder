@@ -244,7 +244,6 @@
 
       .card:hover {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        transform: translateY(-5px)
       }
 
       footer a {
@@ -268,7 +267,8 @@
           width: 100% !important
         }
         .card {
-          height: auto !important
+          height: auto !important;
+          transform: none !important
         }
       }
 
@@ -435,7 +435,7 @@
           Projects
         </h2>
         <div class="row container projectContainer">
-          <div class="col s4 m12">
+          <div class="col s4 m12" style="transform: rotate(-1deg)">
             <div class="card">
               <div class="content">
                 <h4>
@@ -598,6 +598,7 @@
           x.style.display = "block";
           var s = document.getElementById(selector);
           s.style.opacity = 0;
+          document.body.style.overflow = "hidden";
           setTimeout(function() {
             s.style.transform = 'scale(1) translate(-50%, -50%)';
             s.style.opacity = 1;
@@ -608,6 +609,7 @@
           s.style.opacity = 0;
           var x = document.getElementById('modal-overlay');
           x.style.opacity = 0;
+          document.body.style.overflow = "";
           setTimeout(function() {x.style.display = "none";s.style.display = "none";s.style.transform = "scale(.9) translate(-50%, -50%)";}, 200)
         },
       }
