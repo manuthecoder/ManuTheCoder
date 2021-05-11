@@ -27,16 +27,80 @@
     <meta property="twitter:description" content="Hi! My name is Manu, and I'm a self-taught full-stack developer! I own many apps, websites, and servers accross the world!">
     <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/77016441?s=460&u=7364273ea45ebd33bb2edecb8605d732850ec904&v=4">
     <style>
+      .card {
+        background: white
+      }
+      #m1::before {
+        background-position: top left;
+        width: 700px;
+        height: 700px;
+        background-attachment: fixed;
+        content: "";
+        position: absolute;
+        z-index: -999999;
+        right: -400px;
+        animation: tr 30s infinite;
+        background-size: 400px;
+        background: url("data:image/svg+xml,%0A%3Csvg id='visual' viewBox='0 0 600 600' width='600' height='600' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1'%3E%3Cg transform='translate(353.4462710577518 300.24985764232395)'%3E%3Cpath d='M128 -139.4C166 -90 197 -45 196.6 -0.4C196.2 44.2 164.4 88.4 126.4 132.2C88.4 176.1 44.2 219.5 -22.1 241.6C-88.4 263.7 -176.8 264.4 -232.4 220.6C-288.1 176.8 -311.1 88.4 -301.3 9.8C-291.5 -68.8 -249 -137.7 -193.3 -187C-137.7 -236.3 -68.8 -266.2 -11.9 -254.3C45 -242.4 90 -188.7 128 -139.4' fill='%2300c853'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");        
+        background-repeat: no-repeat
+      }
+      button {
+        font-size: 15px;
+        margin: 5px
+      }
+      #m2::before {
+        background-position: top left;
+        width: 900px;
+        height: 900px;
+        content: "";
+        position: absolute;
+        z-index: -999999;
+        left: -200px;
+        margin-top: 100px;
+        animation: tr 30s infinite;
+        background-size: 400px;
+        background-image: url("data:image/svg+xml,%0A%3Csvg id='visual' viewBox='0 0 600 600' width='600' height='600' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1'%3E%3Cg transform='translate(326.2231605247789 366.51082655219307)'%3E%3Cpath d='M183.1 -195.9C232.7 -133.4 265.4 -66.7 264.7 -0.7C264 65.3 229.9 130.6 180.2 161.8C130.6 193.1 65.3 190.3 -2 192.3C-69.3 194.3 -138.6 201.1 -198.3 169.8C-257.9 138.6 -308 69.3 -316 -8C-324 -85.3 -290 -170.6 -230.3 -233.1C-170.6 -295.6 -85.3 -335.3 -9.3 -326C66.7 -316.7 133.4 -258.4 183.1 -195.9' fill='%2300c853'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+      }
+      body {
+        overflow-x: hidden
+      }
+      @keyframes tr {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(50px) rotate(10deg)
+        }
+        100% {
+          transform: translateY(0)
+        }
+      }
     </style>
   </head>
 
   <body data-aos="fade-in">
     <div id="contact" class="modal">
       <div class="modal-content">
-        <h4>Modal Content</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <h4>Contact</h4>
+        <p>
+              <b>Email:</b>   manuthecoder@protonmail.com <br>
+              <b>Discord:</b> ManuTheCoder#5821         <br>
+              <b>GitHub:</b>  @ManuTheCoder              <br> 
+              <b>Dev Community:</b> @ManuTheCoder       <br>
+            </p>
+        <form id="my-form" action="https://formspree.io/f/mqkwzlog" method="POST">
+          <div class="input input-border">
+            <label>Email</label>
+            <input type="email" autocomplete="off" name="email" spellcheck="false">
+          </div>
+          <div class="input input-border">
+            <label>Message</label>
+            <textarea autocomplete="off" name="message"></textarea>
+          </div>
+          <button id="my-form-button" style="background: #512da8;box-shadow: none">Submit</button>
+          <p id="my-form-status"></p>
+        </form>
       </div>
       <div class="modal-footer">
         <a class="btn-flat right" href="#" onclick="modal.close('contact')">Close</a>
@@ -52,6 +116,7 @@
     </nav>
     <main id="main">
       <div class="spacer"></div>
+      <div style="margin-top: 80px;"></div>
       <div class="container">
         <div class="row">
           <div class="col s6">
@@ -70,7 +135,7 @@
       </div>
       <br>
       <br>
-      <div class="center">
+      <div class="center" id="m1">
         <br>
         <h2 class="center">
           Projects
@@ -170,7 +235,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="m2">
         <div style="padding: 15px">
           <h2>
             Recent Posts
