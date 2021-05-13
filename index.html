@@ -3,11 +3,11 @@
 
   <head>
     <title>ManuTheCoder</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
@@ -84,11 +84,11 @@
       <div class="modal-content">
         <h4>Contact</h4>
         <p>
-              <b>Email:</b>   manuthecoder@protonmail.com <br>
-              <b>Discord:</b> ManuTheCoder#5821         <br>
-              <b>GitHub:</b>  @ManuTheCoder              <br> 
-              <b>Dev Community:</b> @ManuTheCoder       <br>
-            </p>
+          <b>Email:</b>   manuthecoder@protonmail.com <br>
+          <b>Discord:</b> ManuTheCoder#5821         <br>
+          <b>GitHub:</b>  @ManuTheCoder              <br> 
+          <b>Dev Community:</b> @ManuTheCoder       <br>
+        </p>
         <form id="my-form" action="https://formspree.io/f/mqkwzlog" method="POST">
           <div class="input input-border">
             <label>Email</label>
@@ -106,10 +106,21 @@
         <a class="btn-flat right" href="#" onclick="modal.close('contact')">Close</a>
       </div>
     </div>
+    <div id="demo_modal" class="modal">
+      <div class="modal-content"  style="height:50vh;overflow: scroll">
+        <h4>About</h4>
+        <p style="font-size: 20px;line-height: 30px;">Hi! My name is Manu, and I'm a junior full-stack developer and DevOps Engineer. I'm 13 years old, and live in California, USA. My hobbies are coding, playing Minecraft, and watching Star Trek. I have watched the original series, all of the movies, and some of the next generation episodes.<br> <br><b>Captain's log stardate 2017.0</b> (4th grade)<br>I started my journey in 2017, using scratch to code games. I made mini projects, and started using Weebly and Wix to make websites.<br><br><b>Captain's log stardate 2018.0</b> (5th grade)<br> I was tired of wix, and I went on exploring HTML, CSS, and JavaScript to make actual websites. My very first website was about books and was called "ReadQuest". <br><br><b>Captain's log stardate 2020.0</b> (6th grade)<br> I continued learning HTML, CSS, and JS, and was having fun exploring GitHub, and Stack Overflow. In late 6th grade (Around the time COVID-19 hit USA), I started learning PHP, and SQL, mainly because I wanted to create a "user account system" for my app. I then realized that this language was fun to learn, and I kept on playing around with it's logic and functions. Around the time school ended, I got an idea of a home inventory app called "KeepInventory". During the summer break, I was coding the entire app. Thank god this year is over. <br><br><b>Captain's log stardate 2021.0</b> (7th grade)<br> I have started learning about React, and it's components. It's a very interesting language to learn. I also have learned AJAX in the process. In March, I won my first hackathon called HackOR (see the project "SchoolNerd" for more details) !!! Over the past few months, I have been coding apps, mini apps, and improvising my current ones! I'm glad Dr. McCoy [doctors] have produced vaccines for COVID!</p>
+        <p class="center gray-text"><i><b>Captain's log stardate unknown. The future is yet to come (lol)</b></i>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a class="btn-flat right" href="#" onclick="modal.close('demo_modal')">Close</a>
+      </div>
+    </div>  
     <nav>
       <div class="container" style="width: 90%">
         <ul>
-          <li class="right"><a href="#">About</a></li>
+          <li class="right" onclick="modal.open('demo_modal')"><a href="#!">About</a></li>
           <li><a href="#">ManuTheCoder</a></li>
         </ul>
       </div>
