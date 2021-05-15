@@ -5,7 +5,7 @@ xhttp.onreadystatechange = function() {
     var articles = JSON.parse(this.responseText);
     for (var i in articles) {
       document.getElementById("articles").innerHTML += `
-<div class="col s4" style="padding: 15px">
+<div class="col s12 m4" style="padding: 15px">
 <a href="${articles[i].url}" target="_blank" class="card content">${articles[i].title}</a>
 </div>
 `;
