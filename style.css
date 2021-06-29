@@ -209,8 +209,8 @@ button:active {
   margin-top: 10px
 }
 
-.content {
-  height: 170px
+.content:not(#articles .content) {
+  min-height: 180px;
 }
 
 .card {

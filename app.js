@@ -12,10 +12,11 @@ xhttp.onreadystatechange = function() {
     }
   }
 };
-xhttp.open("GET", "https://dev.to/api/articles?username=manuthecoder&per_page=3", true);
+xhttp.open("GET", "https://dev.to/api/articles?username=manuthecoder&per_page=10", true);
 xhttp.send();
 var modal = {
   open: function(selector) {
+		document.documentElement.style.overflow = 'hidden'
     document.getElementById(selector).style.display = 'block';
     var x = document.getElementById('modal-overlay');
     x.style.opacity = 0;
@@ -35,6 +36,7 @@ var modal = {
     }, 200)
   },
   close: function(selector) {
+		document.documentElement.style.overflow = ''
     var s = document.getElementById(selector);
     s.style.opacity = 0;
     var x = document.getElementById('modal-overlay');
