@@ -4,7 +4,29 @@
   -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
   -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
 }
-
+.chip {
+  display: inline-block;
+  padding: 0 15px;
+  height: 35px;
+  font-size: 16px;
+  line-height: 36px;
+  color: #303030;
+  border-radius: 25px;
+	margin-right: 5px;
+	margin-top: 5px;
+	user-select: none;
+	cursor: pointer;
+  background-color: rgba(200, 200, 200, .4);
+}
+.chip:hover {
+	background-color: rgba(200, 200, 200, .5)
+}
+.chip:active {
+	background-color: rgba(200, 200, 200, .6)
+}
+.active {
+	background-color: rgba(200, 200, 200, .9) !important
+}
 a {
   color: #2196f3
 }
@@ -37,6 +59,13 @@ a {
   text-decoration: none
 }
 
+.s7 {
+	width: 75%;
+}
+.s3 {
+	width: 25%;
+	padding-top: 50px
+}
 .s4 {
   width: 33.333%
 }
@@ -260,8 +289,10 @@ footer a {
 h4 {
   font-size: 20px
 }
-
 @media only screen and (max-width: 800px) {
+	.hide-on-mobile {
+		display: none !important
+	}
   .m12 {
     width: 100% !important
   }
