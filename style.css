@@ -289,6 +289,9 @@ footer a {
 h4 {
   font-size: 20px
 }
+.hide {
+	display: none !important
+}
 @media only screen and (max-width: 800px) {
 	.hide-on-mobile {
 		display: none !important

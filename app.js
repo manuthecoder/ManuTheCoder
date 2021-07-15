@@ -19,13 +19,15 @@ function load_articles(tag = "") {
 				blog.tags += articles[i].tags;
 				if (tag == "" || articles[i].tags.includes(tag)) {
 					document.getElementById("articlesContainer").innerHTML += `
-<div class="col s12 m4" style="padding: 15px">
+<div class="col s12 m4 ${(parseInt(i) > 5 ? "hide" : "")}" style="padding: 15px">
 <a href="${articles[i].url}" target="_blank" class="card content">${articles[i].title}</a>
 </div>
 `;
 				}
 				if (articles[i].tags.trim() !== "") blog.tags += ", "
 			}
+
+			document.getElementById("articlesContainer").innerHTML += `<button onclick="this.remove();\$('.hide').removeClass('hide')" style="width: 100%;display: block;background: black;border-radius: 2px;box-shadow: none !important">View More</button>`
 			blog.tags = blog.tags.split(",")
 			console.log(blog.tags);
 			blog.tags = [...new Set(blog.tags)]
@@ -38,7 +40,7 @@ function load_articles(tag = "") {
 			})
 		}
 	};
-	xhttp.open("GET", `https://dev.to/api/articles?username=manuthecoder&per_page=6`, true);
+	xhttp.open("GET", `https://dev.to/api/articles?username=manuthecoder&per_page=100`, true);
 	xhttp.send();
 }
 load_articles()
