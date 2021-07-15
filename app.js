@@ -177,7 +177,7 @@ function toggle_theme() {
 			localStorage.setItem("theme", "dark")
     }
     ripple.style.display = "none";
-  }, 600);
+  }, 400);
 }
 
 window.addEventListener("load", function() {

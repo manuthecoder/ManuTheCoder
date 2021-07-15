@@ -617,9 +617,9 @@ textarea {
 }
 
 #ripple {
-  width: 10px;
   z-index: -99999;
-  height: 10px;
+	margin-top: 7px;
+	margin-left: 15px;
   background: #212121;
   position: absolute;
   border-radius: 99999999px;
@@ -632,14 +632,18 @@ textarea {
     /* top: -50vh;
 		right: -50vw; */
 
-    opacity: 0;
+    /* opacity: .5; */
+		width: 10px;
+		height: 10px;
   }
-  10% {opacity:1}
+  10% {opacity:1;width: 10px;
+		height: 10px;}
   100% {
     opacity: 1;
     /* top: -50vh;
     right: -50vw; */
-    
+    width: 10px;
+		height: 10px;
     transform: scale(500)
   }
 }
@@ -648,15 +652,18 @@ textarea {
   0% {
     /* top: -50vh;
 		right: -50vw; */
-
-    opacity: 0;
+width: 10px;
+		height: 10px;
+    opacity: 1;
   }
-  10% {opacity:1}
+  10% {opacity:1;width: 10px;
+		height: 10px;}
   100% {
     opacity: 1;
     /* top: -50vh;
     right: -50vw; */
-    
+    width: 10px;
+		height: 10px;
     transform: scale(300)
   }
 }
