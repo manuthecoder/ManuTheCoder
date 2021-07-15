@@ -683,7 +683,7 @@ h1, h2, h3, h4, h5, h6, a, p, .card, span {
 }
 .dark .card {
 	color: white !important;
-	background: rgba(255, 255, 255, .1) !important
+	background: #595959 !important
 }
 .dark .input-border label {
 	background: #212121 !important
