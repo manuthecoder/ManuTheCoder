@@ -617,33 +617,49 @@ textarea {
 }
 
 #ripple {
-  content: "";
-  width: 1px;
+  width: 10px;
   z-index: -99999;
-  height: 1px;
+  height: 10px;
   background: #212121;
-  display: block;
   position: absolute;
   border-radius: 99999999px;
   transition: all .5s;
-  animation: ripple 1s forwards;
+  animation: ripple .6s forwards;
   display: none
 }
 @keyframes ripple {
   0% {
-    top: -50vh;
+    /* top: -50vh;
+		right: -50vw; */
+
     opacity: 0;
-    right: -50vw;
   }
   10% {opacity:1}
   100% {
     opacity: 1;
-    top: -50vh;
-    right: -50vw;
+    /* top: -50vh;
+    right: -50vw; */
     
-    width: 200vw;
-    height: 200vh
+    transform: scale(500)
   }
+}
+@media only screen and (max-width: 500px) {
+	@keyframes ripple {
+  0% {
+    /* top: -50vh;
+		right: -50vw; */
+
+    opacity: 0;
+  }
+  10% {opacity:1}
+  100% {
+    opacity: 1;
+    /* top: -50vh;
+    right: -50vw; */
+    
+    transform: scale(300)
+  }
+}
 }
 body {
 	transition: all .2s
