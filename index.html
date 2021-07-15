@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -136,21 +135,28 @@
     <nav>
       <div class="container" style="width: 90%">
         <ul>
+					<li class="right darkTheme" onclick="toggle_theme()">
+  <div id="ripple"></div>
+  <a href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+  </a>
+</li>
           <li class="right" onclick="modal.open('demo_modal')"><a href="#!">About</a></li>
-          <li class="right" onclick="window.open('https://github.com/manuthecoder')"><a href="#!">GitHub</a></li>
+          <li class="right"><a href="https://blog.manuthecoder.ml">Blog</a></li>
+          <li class="hide-on-mobile right" onclick="window.open('https://github.com/manuthecoder')"><a href="#!">GitHub</a></li>
           <li><a href="#">ManuTheCoder</a></li>
         </ul>
       </div>
     </nav>
     <main id="main">
       <div class="spacer"></div>
-      <div style="margin-top: 80px;"></div>
+      <div style="margin-top: 60px;"></div>
       <div class="container">
         <div class="row">
           <div class="col s6 m12">
             <p class="fade-up">Hi! I'm Manu 👋 </p>
             <h1 class="fade-up" style="animation-delay: 100ms"><b>I'm a full stack developer who loves to <span style="color: #00c853">code!</span></b> </h1>
-            <p class="fade-up" style="animation-delay: 200ms">Welcome! I believe that the world can become a better place by coding! All my projects are <i>free and open source to anyone and everyone!</i>. I mainly code JavaScript and PHP, and I have  experience with Node.JS and SQL. </p>
+            <p class="fade-up" style="animation-delay: 200ms">Welcome! I believe that the world can become a better place by coding! All my projects are <i>free and open source to anyone and everyone!</i>. My main languages are JavaScript, PHP, and CSS. I also have experience with Discord.JS, Node.JS, and a bit of React</p>
             <button class="fade-up" style="animation-delay: 300ms" onclick="window.open('https://resume.manuthecoder.ml/')">View Resume</button>
             <button class="white fade-up" style="animation-delay: 400ms" onclick="modal.open('contact')">Contact</button>
           </div>
@@ -280,7 +286,56 @@
             </div>
           </div>
         </div>
+				<div style="margin-top: 60px;"></div>
+<h2 class="center">
+          Other Projects
+        </h2>
+
+
+        <div class="row container projectContainer other">
+          <div class="col s4 m12">
+            <div class="card">
+              <div class="content" style="min-height: unset !important">
+                <h4 data-tooltip-bottom="1st place winner in HackOR competition 2021">
+                  SchoolNerd &nbsp;
+									<img src="https://i.ibb.co/nDc3HGG/unnamed.jpg" width="20px" style="vertical-align: middle;margin-right: 10px;border-radius: 99999px">
+                </h4>
+								<p>Online classroom Management</p>
+              </div>
+              <div class="footer">
+                <a href="https://schoolnerd.ml" class="visit_btn">Visit <i class="material-icons">arrow_right</i></a>
+              </div>
+            </div>
+          </div>
+					<div class="col s4 m12">
+            <div class="card">
+              <div class="content" style="min-height: unset !important">
+                <h4>
+                  Material Element
+                </h4>
+								<p>Material design framework</p>
+              </div>
+              <div class="footer">
+                <a href="https://material-element.manuthecoder.repl.co/" class="visit_btn">Visit <i class="material-icons">arrow_right</i></a>
+              </div>
+            </div>
+          </div>
+					<div class="col s4 m12">
+            <div class="card">
+              <div class="content" style="min-height: unset !important">
+                <h4>
+                  Password Generator
+                </h4>
+								<p>JS password generator with options</p>
+              </div>
+              <div class="footer">
+                <a href="https://password-generator.manuthecoder.repl.co" class="visit_btn">Visit <i class="material-icons">arrow_right</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+			<div style="margin-top: 60px;"></div>
       <div class="container" id="m2">
         <div style="padding: 15px">
           <h2>
@@ -292,6 +347,7 @@
         </div>
         <div id="articles" class="row"></div>
       </div>
+			<div style="margin-top: 60px;"></div>
       <div class="container">
         <div style="padding: 15px">
           <h2>Latest Pens</h2>
@@ -303,7 +359,7 @@
               <div class="image">
                 <img src="https://i.ibb.co/qxMrmP5/Screenshot-2021-05-10-6-17-57-PM.png">
               </div>
-              <div class="content" style="height: auto">
+              <div class="content" style="min-height: unset !important">
                 <a href="https://codepen.io/ManuTheCoder/pen/YzGMdmZ"><h4>	 template</h4></a>
               </div>
             </div>
@@ -313,7 +369,7 @@
               <div class="image">
                 <img src="https://i.ibb.co/QMmQMdR/Screenshot-2021-05-10-6-08-37-PM.png">
               </div>
-              <div class="content" style="height: auto">
+              <div class="content" style="min-height: unset !important">
                 <a href="https://codepen.io/ManuTheCoder/details/YzNNVrV"><h4>My First React project!</h4></a>
               </div>
             </div>
@@ -323,16 +379,17 @@
               <div class="image">
                 <img src="https://i.ibb.co/pZHLW53/Screenshot-2021-05-10-6-15-59-PM.png">
               </div>
-              <div class="content" style="height: auto">
+              <div class="content" style="min-height: unset !important">
                 <a href="https://codepen.io/ManuTheCoder/pen/mdRqROy"><h4>Material Design FAB</h4></a>
               </div>
             </div>
           </div>
         </div>
       </div>
+			<div style="margin-top: 60px;"></div>
       <div class="container">
         <div class="row">
-          <div class="col s5">
+          <div class="col s5 m12">
             <h2>
               Contact me
             </h2>
@@ -343,7 +400,7 @@
               <b>Dev Community:</b> @ManuTheCoder       <br>
             </p>
           </div>
-          <div class="col s5">
+          <div class="col s5 m12">
             <br><br><br>
             <form id="my-form" action="https://formspree.io/f/mqkwzlog" method="POST">
               <div class="input input-border">

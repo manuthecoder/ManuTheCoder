@@ -492,3 +492,195 @@ textarea {
 .image img {
   width: 100%
 }
+[data-tooltip]:hover {
+	position: relative;
+}
+[data-tooltip]:hover::before {
+	all: initial;
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #1a1a1a;
+	content: attr(data-tooltip);
+	color: #f9f9f9;
+	position: absolute;
+	bottom: 100%;
+	width: 100px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 14px;
+}
+[data-tooltip-bottom]:hover,
+[data-tooltip-left]:hover,
+[data-tooltip-right]:hover,
+[data-tooltip]:hover {
+	position: relative;
+}
+[data-tooltip-bottom]:hover::after,
+[data-tooltip-left]:hover::after,
+[data-tooltip-right]:hover::after,
+[data-tooltip]:hover::after {
+	all: initial;
+	display: inline-block;
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;		  
+	border-top: 10px solid #1a1a1a;
+	position: absolute;
+	bottom: 100%;
+	content: '';
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin-bottom: 5px;
+}
+[data-tooltip-right]:hover::after {
+	margin-bottom: 0;
+	bottom: auto;
+	transform: rotate(90deg) translate(0, -50%);
+	left: 100%;
+	top: 50%;
+	margin-left: -5px;
+	margin-top: -5px;
+}
+[data-tooltip-left]:hover::after {
+	margin-bottom: 0;
+	bottom: auto;
+	transform: rotate(-90deg) translate(0, -50%);
+	left: auto;
+	right: 100%;
+	top: 50%;
+	margin-right: -5px;
+	margin-top: -5px;
+}
+[data-tooltip-bottom]:hover::after {
+	margin-bottom: 0;
+	bottom: auto;
+	transform: rotate(180deg) translate(-50%, 0);
+	top: 100%;
+	margin-left: -20px;
+	margin-top: 5px;
+}
+[data-tooltip-bottom]:hover::before,
+[data-tooltip-left]:hover::before,
+[data-tooltip-right]:hover::before,
+[data-tooltip]:hover::before {
+	all: initial;
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #1a1a1a;
+	content: attr(data-tooltip);
+	color: #f9f9f9;
+	position: absolute;
+	bottom: 100%;
+	width: 100px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 14px;
+}
+[data-tooltip-right]:hover::before {
+	margin-bottom: 0;
+	bottom: auto;
+	transform: translate(0, -50%);
+	left: 100%;
+	top: 50%;
+	content: attr(data-tooltip-right);
+	margin-left: 15px;
+}
+[data-tooltip-left]:hover::before {
+	margin-bottom: 0;
+	bottom: auto;
+	transform: translate(0, -50%);
+	left: auto;
+	right: 100%;
+	top: 50%;
+	content: attr(data-tooltip-left);
+	margin-right: 15px;
+}
+[data-tooltip-bottom]:hover::before {
+	margin-bottom: 0;
+	bottom: auto;
+	top: 100%;
+	content: attr(data-tooltip-bottom);
+	margin-top: 15px;
+}
+.other .visit_btn {
+	background: rgba(255, 255, 255, .1) !important;
+	color: gray !important
+}
+
+#ripple {
+  content: "";
+  width: 1px;
+  z-index: -99999;
+  height: 1px;
+  background: #212121;
+  display: block;
+  position: absolute;
+  border-radius: 99999999px;
+  transition: all .5s;
+  animation: ripple 1s forwards;
+  display: none
+}
+@keyframes ripple {
+  0% {
+    top: -50vh;
+    opacity: 0;
+    right: -50vw;
+  }
+  10% {opacity:1}
+  100% {
+    opacity: 1;
+    top: -50vh;
+    right: -50vw;
+    
+    width: 200vw;
+    height: 200vh
+  }
+}
+body {
+	transition: all .2s
+}
+h1, h2, h3, h4, h5, h6, a, p, .card, span {
+	transition: color .2s
+}
+.dark {
+  background: #212121;
+  color: #fff
+}
+.dark nav a {
+	color: white !important
+}
+.dark .chip {
+	color: white !important
+}
+.dark textarea, .dark input {
+	color: white !important;
+	background: transparent !important
+}
+.dark .card {
+	color: white !important;
+	background: rgba(255, 255, 255, .1) !important
+}
+.dark .input-border label {
+	background: #212121 !important
+}
+.dark #ripple {
+  background: white !important
+}
+.dark .modal-overlay {
+	background: rgba(255, 255, 255, .3) !important
+}
+.dark .modal {
+	background: #303030 !important
+}
+.dark span[style] {
+	color: white !important
+}
