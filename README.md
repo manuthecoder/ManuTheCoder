@@ -1,5 +1,5 @@
 <a href="#"><img src="https://github-readme-stats.vercel.app/api?username=ManuTheCoder&show_icons=true" style='margin:0;' width="50%" height="360" align="right"></a>
-<h1>Manu G.</h1>
+<h1>Manu</h1>
 <!-- <a href="#" style='margin:0;'><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ManuTheCoder&layout=compact" style='margin:0;' width="390" height="190" align="center"></a> -->
 <ul>
   <li>I'm a 13 year old full-stack developer!</li>
