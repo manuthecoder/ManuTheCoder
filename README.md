@@ -4,8 +4,9 @@
 <li>🔭 Favorite color?  #3483eb</li>
 <li>📄 I'm currently in middle school 🏫</li>
 <li>👨‍💻 All of my projects are available at <a href="https://manuthecoder.ml/">www.manuthecoder.ml</a></li>
-<li>🌱 I’m currently learning **Node.JS**</li>
-<li>⚡ Working on an app, [Smartlist](https://smartlist.ga)</li>
+<li>🌱 I’m currently learning Node.JS (It's fun!!!)</li>
+<li>⚡ Working on an app, https://smartlist.ga</li>
+<li>Want to help me? Join my organization: https://smartlist.ga/join </li>
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 <br>
