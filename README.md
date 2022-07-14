@@ -20,7 +20,7 @@
 <a href="https://twitter.com/smartlistapp" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="smartlistapp" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/manuthecoder" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="manuthecoder" height="30" width="40" /></a>
 <a href="https://codesandbox.com/manuthecoder_1789" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg" alt="manuthecoder_1789" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/manu-codes" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="manu-codes" height="30" width="40" /></a>
+<a href="https://www.youtube.com/channel/UCOnh5bMGkwRWFzakvTkWcBA/featured" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="manu-codes" height="30" width="40" /></a>
 <a href="https://discord.gg/https://discord.gg/9EJSxkJhnQ" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.gg/9EJSxkJhnQ" height="30" width="40" /></a>
 </p>
 
