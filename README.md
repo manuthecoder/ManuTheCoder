@@ -9,9 +9,9 @@
 
 - 📝 I regularly write articles on [https://blog.manuthecoder.ml](https://blog.manuthecoder.ml)
 
-- 💬 Ask me about **React, JS, and PHP**
+- 💬 Ask me about **React, JS, and TypeScript**
 
-- 📫 How to reach me **manuthecoder08@gmail.com**
+- 📫 How to reach me **manuthecoder@icloud.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
