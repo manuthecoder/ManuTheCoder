@@ -26,5 +26,3 @@
 ## `👀 Projects`
 
 ![https://i.ibb.co/xGpk3d7/image.png](https://i.ibb.co/xGpk3d7/image.png)
-
-![https://i.ibb.co/xGpk3d7/image.png](https://i.ibb.co/xGpk3d7/image.png)
