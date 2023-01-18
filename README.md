@@ -4,7 +4,7 @@
 ## `🔥 About me`
 * 🌎 &nbsp; California, USA
 * 🖥 &nbsp; I work on windows
-* 🔭 &nbsp; Featured project: [Carbon](https://smartlist.tech/)
+* 🔭 &nbsp; Featured project: [Dysperse](https://dysperse.com/)
 * ⚡ &nbsp; Fun fact: I think I'm funny
 
 
