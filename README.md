@@ -1,5 +1,5 @@
-# `hey, my name is manu`
-#### `and I'm a high school software enthusiast`
+# `👋 Hey, my name is Manu`
+#### `and I'm a high school software enthusiast...`
 
 ## `🔥 About me`
 * 🌎 &nbsp; California, USA
