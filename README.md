@@ -1,4 +1,4 @@
-# `hey, my name is Manu`
+# `hey, my name is manu`
 #### `and I'm a high school software enthusiast`
 
 ## `🔥 About me`
