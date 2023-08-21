@@ -21,4 +21,4 @@
 * SQL
 
 ## `👀 Projects`
-[Dysperse]([url](https://dysperse.com)https://dysperse.com)
+[Dysperse](https://dysperse.com)
