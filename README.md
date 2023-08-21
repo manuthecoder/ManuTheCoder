@@ -1,5 +1,5 @@
 # `👋 Hey, my name is Manu`
-#### `and I'm a high school software enthusiast...`
+#### `High school software enthusiast`
 
 ## `🔥 About me`
 * 🌎 &nbsp; California, USA
@@ -9,20 +9,16 @@
 
 
 ## `❤ Social`
-* 📷 &nbsp; [Instagram &rarr;](https://www.instagram.com/manu.codes_/)
-* 🐦 &nbsp; [Twitter &rarr;](https://twitter.com/_manu_codes)
-* 💼 &nbsp; [LinkedIn &rarr;](https://www.linkedin.com/in/manuthecoder/)
-* 🔗 &nbsp; [Website &rarr;](https://manuthecoder.ml/)
+* 💼 &nbsp; [LinkedIn &rarr;](https://www.linkedin.com/in/manu-codes/)
+* 🔗 &nbsp; [Website &rarr;](https://manuthecoder.is-a.dev/)
 * 💭 &nbsp; [DEV.to &rarr;](https://dev.to/manuthecoder)
 * 🧑‍🤝‍🧑 &nbsp; [Discord &rarr;](https://discord.gg/9EJSxkJhnQ)
 
 ## `⚡ Languages`
-* **I code mainly in TypeScript React, but I also know...**
-* SCSS
-* JavaScript
-* Node.JS
-* Discord.JS
+* TypeScript
+* React
+* Next.JS
+* SQL
 
 ## `👀 Projects`
-
-![https://i.ibb.co/xGpk3d7/image.png](https://i.ibb.co/xGpk3d7/image.png)
+[Dysperse]([url](https://dysperse.com)https://dysperse.com)
