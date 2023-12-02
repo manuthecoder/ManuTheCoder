@@ -1,7 +1,5 @@
 "use client";
-
 import { orange } from "@radix-ui/colors";
-import { Emoji } from "./page";
 
 export function IntroSection() {
   return (
