@@ -12,6 +12,7 @@
     "@radix-ui/colors": "^3.0.0",
     "next": "14.0.3",
     "react": "^18",
+    "react-creative-cursor": "^1.2.7",
     "react-dom": "^18",
     "sass": "^1.69.5"
   },

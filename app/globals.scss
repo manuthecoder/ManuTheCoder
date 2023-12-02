@@ -24,6 +24,9 @@ body {
 @layer components {
   .nav-btn {
     @apply flex cursor-pointer items-center justify-center select-none;
+    &:active {
+      opacity: 0.6;
+    }
   }
   img {
     @apply select-none;
@@ -51,7 +54,7 @@ body {
   }
 
   .card {
-    @apply border border-black px-5 py-3 rounded-3xl select-none flex relative gap-5;
+    @apply border border-black px-5 py-3 rounded-3xl select-none flex relative gap-5 items-center;
     border-width: 2px;
     transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     box-shadow: 2px 2px 0px 0px black;

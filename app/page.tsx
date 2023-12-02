@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import { StyleHTMLAttributes } from "react";
 import { IntroSection } from "./IntroSection";
+import { Skills } from "./Skills";
 
 export function Emoji({
   style = {},
@@ -22,57 +24,39 @@ export function Emoji({
   );
 }
 
-function Skills() {
-  return (
-    <div>
-      <h2 className="subheading">Skills</h2>
-      <div className="flex items-center gap-2">
-        <Image
-          width={40}
-          height={40}
-          src="/skills/typescript.png"
-          alt="Typescript"
-          className="rounded-md"
-        />
-        <Image
-          width={40}
-          height={40}
-          src="/skills/javascript.png"
-          alt="Javascript"
-          className="rounded-md"
-        />
-        <Image width={40} height={40} src="/skills/react.png" alt="React" />
-        <Image width={40} height={40} src="/skills/css.png" alt="CSS" />
-        <Image width={40} height={40} src="/skills/nextjs.png" alt="Next.JS" />
-      </div>
-    </div>
-  );
-}
-
 function Projects() {
   return (
     <div>
       <h2 className="subheading">Projects</h2>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-3">
         {[
           {
             name: "Dysperse",
             status: "New",
             description: "Meet the new standard for productivity.",
+            href: "//dysperse.com",
           },
           {
             name: "Popvote",
             status: false,
             description: "Meet the new standard for productivity.",
+            href: "//popvote.vercel.app",
           },
           {
             name: "SchoolNerd",
-            status: false,
+            status: "Deprecated",
             description:
-              "Google classroom, but with with superpowers. Winner of HackOR 2021",
+              "Google classroom, with superpowers. Winner of HackOR 2021",
+            href: "https://devpost.com/software/schoolnerd",
           },
         ].map((project) => (
-          <div className="card" key={project.name}>
+          <div
+            className="card"
+            key={project.name}
+            onClick={() => {
+              if (project.href) window.open(project.href);
+            }}
+          >
             <Image
               src={`/projects/${project.name.toLowerCase()}.png`}
               width={50}
@@ -108,8 +92,10 @@ export default function Home() {
       }}
     >
       <div className="flex w-full">
-        <div className="flex-grow w-full">
-          <IntroSection />
+        <div className="w-full flex content-center items-center">
+          <div>
+            <IntroSection />
+          </div>
         </div>
         <div className="flex-grow w-full flex flex-col gap-8">
           <Skills />

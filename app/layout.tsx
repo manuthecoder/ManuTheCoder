@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import "react-creative-cursor/dist/styles.css";
 import "./globals.scss";
-import { orange } from "@radix-ui/colors";
 
 export const metadata: Metadata = {
   title: "Create Next App",
