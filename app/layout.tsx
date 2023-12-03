@@ -32,6 +32,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta property="og:image" content="/og.png" />
         <meta property="twitter:image" content="/og.png" />
       </head>
