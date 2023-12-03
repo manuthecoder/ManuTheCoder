@@ -6,6 +6,12 @@ import { Navbar } from "./Navbar";
 export const metadata: Metadata = {
   title: "@_manu.codes",
   description: "Full stack software enthusiast",
+
+  openGraph: {
+    type: "profile",
+    username: "@_manu.codes",
+    images: "/og.png",
+  },
 };
 
 export default function RootLayout({
