@@ -8,7 +8,7 @@ function Awards() {
     <div className="w-full">
       <h2 className="subheading">Awards & certifications</h2>
       <div className="pl-2">
-        <div className="flex flex-col gap-3 border-l-4 border-orange-300 pl-4">
+        <div className="flex flex-col gap-3 border-l-2 border-orange-300 pl-4">
           {[
             {
               issuer: "HackOR",
@@ -33,8 +33,8 @@ function Awards() {
           ].map((item) => (
             <div key={item.name} className="relative">
               <div
-                className="w-5 h-5 mt-2 border-orange-300 block border-4 bg-orange-50 rounded-full absolute"
-                style={{ left: "-28px" }}
+                className="w-5 h-5 mt-2 border-orange-300 block border-2 bg-orange-50 rounded-full absolute"
+                style={{ left: "-27px" }}
               />
               <div className="pt-0">
                 <h5 className="text-xs opacity-70">{item.year}</h5>
@@ -53,7 +53,7 @@ function Awards() {
 export default function Home() {
   return (
     <main
-      className="p-7 sm:p-5 sm:px-12 border-2 border-black rounded-3xl mx-auto w-full h-full flex sm:items-center"
+      className="p-7 sm:p-5 sm:px-12 border-2 border-black rounded-3xl bg-orange-50 mx-auto w-full h-full flex sm:items-center"
       style={{
         boxShadow: `2px 2px 0 4px black`,
       }}
