@@ -42,10 +42,10 @@ export function Projects() {
               className="card-logo"
             />
             <div>
-              <h3 className="card-title font-bold flex items-center gap-2">
+              <h3 className="card-title font-bold flex items-center gap-x-3 gap-y-1 pr-20 flex-wrap-reverse">
                 {project.name}
                 {project.status && (
-                  <div className="chip bg-orange-200 font-medium text-xs">
+                  <div className="chip bg-orange-200 font-medium text-xs -ml-1">
                     {project.status}
                   </div>
                 )}

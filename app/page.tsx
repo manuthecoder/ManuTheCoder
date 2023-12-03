@@ -6,21 +6,29 @@ import { Projects } from "./Projects";
 function Awards() {
   return (
     <div className="w-full">
-      <h2 className="subheading">Awards & events</h2>
+      <h2 className="subheading">Awards & certifications</h2>
       <div className="pl-2">
         <div className="flex flex-col gap-3 border-l-4 border-orange-300 pl-4">
           {[
             {
-              name: "HackOR 1st place",
-              year: "2021",
+              issuer: "HackOR",
+              name: "1st place",
+              year: "Spring 2021",
             },
             {
-              name: "CyberPatriot semifinal round qualifier",
-              year: "2022",
+              issuer: "AFA CyberPatriot",
+              name: "Semifinal Round Qualifier",
+              year: "Winter 2022",
             },
             {
-              name: "Harvard CS50x certification",
-              year: "2023",
+              issuer: "CyberForward",
+              name: "Cybersecurity Certification",
+              year: "Spring 2023",
+            },
+            {
+              issuer: "Harvard",
+              name: "CS50x certification",
+              year: "Summer 2023",
             },
           ].map((item) => (
             <div key={item.name} className="relative">
@@ -28,11 +36,11 @@ function Awards() {
                 className="w-5 h-5 mt-2 border-orange-300 block border-4 bg-orange-50 rounded-full absolute"
                 style={{ left: "-28px" }}
               />
-              <div className="pt-3">
+              <div className="pt-0">
                 <h5 className="text-xs opacity-70">{item.year}</h5>
-                <h3 className="card-title flex items-center gap-2">
-                  {item.name}
-                </h3>
+                <h6>
+                  <b style={{ fontWeight: 600 }}>{item.issuer}</b> {item.name}
+                </h6>
               </div>
             </div>
           ))}
