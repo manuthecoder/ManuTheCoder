@@ -22,6 +22,11 @@ body {
 }
 
 @layer components {
+  .title {
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
   .nav-btn {
     @apply flex cursor-pointer items-center justify-center select-none;
     &:active {
@@ -37,13 +42,13 @@ body {
     transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     box-shadow: 2px 2px 0px 0px black;
     &:hover {
-      box-shadow: 5px 5px 0px 0px black;
-      transform: translate(-3px, -3px);
+      box-shadow: 3px 3px 0px 0px black;
+      transform: translate(-1px, -1px);
     }
     &:active {
+      box-shadow: none;
+      transform: translate(2px, 2px);
       filter: brightness(0.9);
-      box-shadow: 2px 2px 0px 0px black;
-      transform: none;
     }
   }
   .chip {
@@ -59,13 +64,14 @@ body {
     transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     box-shadow: 2px 2px 0px 0px black;
     &:hover {
-      box-shadow: 5px 5px 0px 0px black;
-      transform: translate(-3px, -3px);
+      box-shadow: 3px 3px 0px 0px black;
+      transform: translate(-1px, -1px);
     }
     &:active {
+      box-shadow: none;
+      transform: translate(2px, 2px);
+      filter: brightness(0.9);
       background-color: rgba(0, 0, 0, 0.1);
-      box-shadow: 2px 2px 0px 0px black;
-      transform: none;
     }
     & .arrow {
       @apply absolute top-0 right-0 m-4;
