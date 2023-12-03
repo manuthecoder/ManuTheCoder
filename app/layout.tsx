@@ -6,11 +6,16 @@ import { Navbar } from "./Navbar";
 export const metadata: Metadata = {
   title: "@_manu.codes",
   description: "Full stack software enthusiast",
-
   openGraph: {
     type: "profile",
     username: "@_manu.codes",
     images: "/og.png",
+    gender: "Male",
+    siteName: "@_manu.codes",
+    locale: "en_US",
+    url: "https://manu.is-a.dev",
+    title: "@_manu.codes",
+    description: "Full stack software enthusiast",
   },
 };
 
