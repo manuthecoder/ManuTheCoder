@@ -28,7 +28,7 @@ export function Projects() {
           },
         ].map((project) => (
           <div
-            className="card"
+            className="card overflow-hidden"
             key={project.name}
             onClick={() => {
               if (project.href) window.open(project.href);
@@ -39,11 +39,11 @@ export function Projects() {
               width={50}
               height={50}
               alt={`${project.name} logo`}
-              className="card-logo"
+              className="card-logo shrink-0"
             />
-            <div>
-              <h3 className="card-title font-bold flex items-center gap-x-3 gap-y-1 pr-20 flex-wrap-reverse">
-                {project.name}
+            <div className="w-full min-w-0">
+              <h3 className="card-title max-w-full font-bold flex items-center gap-x-3 gap-y-1 pr-20 flex-wrap-reverse">
+                <span>{project.name}</span>
                 {project.status && (
                   <div className="chip bg-orange-200 font-medium text-xs -ml-1">
                     {project.status}

@@ -4,7 +4,7 @@ export function Skills() {
   return (
     <div className="w-full">
       <h2 className="subheading">Skills</h2>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 flex-wrap">
         <Image
           width={40}
           height={40}
