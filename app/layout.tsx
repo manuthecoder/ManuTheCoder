@@ -1,28 +1,12 @@
 import type { Metadata } from "next";
 // import "react-creative-cursor/dist/styles.css";
 import "./globals.scss";
+import { Navbar } from "./Navbar";
 
 export const metadata: Metadata = {
   title: "@_manu.codes",
   description: "Full stack software enthusiast",
 };
-
-function Navbar() {
-  return (
-    <div className="flex h-20 items-center px-12 gap-7">
-      <div className="grow font-extrabold text-xl">@_manu.codes</div>
-      <a href="https://github.com/manuthecoder" className="nav-btn">
-        My work
-      </a>
-      <a href="https://github.com/manuthecoder" className="nav-btn">
-        Github
-      </a>
-      <div className="nav-btn">
-        <span className="material-symbols-rounded">share</span>
-      </div>
-    </div>
-  );
-}
 
 export default function RootLayout({
   children,

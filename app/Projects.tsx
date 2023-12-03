@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Projects() {
   return (
-    <div>
+    <div className="w-full">
       <h2 className="subheading">Projects</h2>
       <div className="flex flex-col gap-3">
         {[

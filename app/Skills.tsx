@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Skills() {
   return (
-    <div>
+    <div className="w-full">
       <h2 className="subheading">Skills</h2>
       <div className="flex items-center gap-2">
         <Image
