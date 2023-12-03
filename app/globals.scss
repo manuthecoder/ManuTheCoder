@@ -42,8 +42,10 @@ body {
     transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     box-shadow: 2px 2px 0px 0px black;
     &:hover {
-      box-shadow: 3px 3px 0px 0px black;
-      transform: translate(-1px, -1px);
+      @media (max-width: 640px) {
+        box-shadow: 3px 3px 0px 0px black;
+        transform: translate(-1px, -1px);
+      }
     }
     &:active {
       box-shadow: none;
@@ -64,8 +66,10 @@ body {
     transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     box-shadow: 2px 2px 0px 0px black;
     &:hover {
-      box-shadow: 3px 3px 0px 0px black;
-      transform: translate(-1px, -1px);
+      @media (max-width: 640px) {
+        box-shadow: 3px 3px 0px 0px black;
+        transform: translate(-1px, -1px);
+      }
     }
     &:active {
       box-shadow: none;

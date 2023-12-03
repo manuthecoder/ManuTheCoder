@@ -22,9 +22,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
       </head>
-      <body className="flex flex-col overflow-hidden h-screen w-screen selection:bg-orange-900 selection:text-orange-100 bg-orange-50">
+      <body className="flex flex-col sm:overflow-hidden sm:h-screen w-screen selection:bg-orange-900 selection:text-orange-100 bg-orange-50">
         <Navbar />
-        <div className="p-10 pt-0 w-full h-full">{children}</div>
+        <div className="p-5 sm:p-10 pt-0 w-full h-full">{children}</div>
       </body>
     </html>
   );

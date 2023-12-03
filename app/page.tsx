@@ -45,18 +45,18 @@ function Awards() {
 export default function Home() {
   return (
     <main
-      className="p-5 px-12 border-2 border-black rounded-3xl mx-auto w-full h-full flex items-center"
+      className="p-7 sm:p-5 sm:px-12 border-2 border-black rounded-3xl mx-auto w-full h-full flex sm:items-center"
       style={{
         boxShadow: `2px 2px 0 4px black`,
       }}
     >
-      <div className="flex w-full gap-20">
+      <div className="flex w-full gap-10 sm:gap-20 flex-col sm:flex-row">
         <div className="w-full max-w-md flex content-center items-center">
           <div>
             <IntroSection />
           </div>
         </div>
-        <div className="flex-grow w-full flex gap-8">
+        <div className="flex-grow flex-col sm:flex-row w-full flex gap-8">
           <div className="w-full flex flex-col gap-8">
             <Skills />
             <Awards />
