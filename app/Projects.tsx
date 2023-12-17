@@ -16,7 +16,7 @@ export function Projects() {
           {
             name: "Popvote",
             status: false,
-            description: "Meet the new standard for productivity.",
+            description: "Blazingly fast, real-time group decision making",
             href: "//popvote.vercel.app",
           },
           {
