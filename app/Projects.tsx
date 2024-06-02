@@ -27,8 +27,7 @@ export function Projects() {
           }
         ].map((project) => (
           <a
-            className="card overflow-hidden"
-            style="text-decoration: none;color:inherit"
+            className="card overflow-hidden no-underline"
             key={project.name}
             href={project.href}
             target="_blank"
