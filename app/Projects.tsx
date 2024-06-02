@@ -14,25 +14,24 @@ export function Projects() {
             href: "//dysperse.com",
           },
           {
+            name: "Factsify",
+            status: "New",
+            description: "Turn your Spotify listening habits into a nutrition facts label.",
+            href: "https://factsify.pages.dev",
+          },
+          {
             name: "Popvote",
             status: false,
             description: "Blazingly fast, real-time group decision making",
             href: "//popvote.vercel.app",
-          },
-          {
-            name: "SchoolNerd",
-            status: "Deprecated",
-            description:
-              "Google classroom, with superpowers. Winner of HackOR 2021",
-            href: "https://devpost.com/software/schoolnerd",
-          },
+          }
         ].map((project) => (
-          <div
+          <a
             className="card overflow-hidden"
+            style="text-decoration: none;color:inherit"
             key={project.name}
-            onClick={() => {
-              if (project.href) window.open(project.href);
-            }}
+            href={project.href}
+            target="_blank"
           >
             <Image
               src={`/projects/${project.name.toLowerCase()}.png`}
@@ -53,7 +52,7 @@ export function Projects() {
               <p className="card-subtitle">{project.description}</p>
             </div>
             <span className="material-symbols-rounded arrow">north_east</span>
-          </div>
+          </a>
         ))}
       </div>
     </div>
