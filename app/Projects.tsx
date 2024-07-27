@@ -10,13 +10,13 @@ export function Projects() {
             name: "Dysperse",
             status: "New",
             description: "Meet the new standard for productivity.",
-            href: "//dysperse.com",
+            href: "//dysperse.com?ref=manu.is-a.dev",
           },
           {
             name: "Factsify",
             status: "New",
             description: "Turn your Spotify listening habits into a nutrition facts label.",
-            href: "https://factsify.pages.dev",
+            href: "https://factsify.pages.dev?ref=manu.is-a.dev",
           },
           {
             name: "Popvote",
