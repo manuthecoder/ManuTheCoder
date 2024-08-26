@@ -10,10 +10,15 @@ export function Navbar() {
       <div
         className="nav-btn"
         onClick={() => {
-          navigator.share({
-            text: "Check out @_manu.codes - full stack software enthusiast",
-            url: "https://manu.is-a.dev",
-          });
+          try {
+            navigator.share({
+              text: "Check out @_manu.codes - full stack software enthusiast",
+              url: "https://manu.is-a.dev",
+            });
+          } catch (e) {
+            navigator.clipboard.writeText("https://manu.is-a.dev");
+            alert("Copied link to clipboard!");
+          }
         }}
       >
         <span className="material-symbols-rounded">share</span>
@@ -21,3 +26,4 @@ export function Navbar() {
     </div>
   );
 }
+
