@@ -58,7 +58,7 @@ export function IntroSection() {
           </svg>
         </button>
         <button
-          className="bg-green-500 text-green-950 btn flex items-center gap-3 pt-2"
+          className="bg-green-500 text-green-950 btn flex items-center gap-3 pt-2.5"
           onClick={() =>
             window.open(
               "https://open.spotify.com/user/gas3v326ti8fyihwazgfuup6t"
