@@ -36,10 +36,11 @@ export default function RootLayout({
         <meta property="og:image" content="/og.png" />
         <meta property="twitter:image" content="/og.png" />
       </head>
-      <body className="flex flex-col sm:overflow-hidden sm:h-screen w-screen selection:bg-orange-900 selection:text-orange-100 bg-orange-50">
+      <body className="flex flex-col min-h-screen w-screen selection:bg-orange-900 selection:text-orange-100 bg-orange-50">
         <Navbar />
         <div className="p-5 sm:p-10 pt-0 w-full h-full">{children}</div>
       </body>
     </html>
   );
 }
+

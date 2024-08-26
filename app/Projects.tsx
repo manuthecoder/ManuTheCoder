@@ -15,7 +15,8 @@ export function Projects() {
           {
             name: "Factsify",
             status: "New",
-            description: "Turn your Spotify listening habits into a nutrition facts label.",
+            description:
+              "Turn your Spotify listening habits into a nutrition facts label.",
             href: "https://factsify.pages.dev?ref=manu.is-a.dev",
           },
           {
@@ -23,7 +24,7 @@ export function Projects() {
             status: false,
             description: "Blazingly fast, real-time group decision making",
             href: "//popvote.vercel.app",
-          }
+          },
         ].map((project) => (
           <a
             className="card overflow-hidden no-underline"
@@ -56,3 +57,4 @@ export function Projects() {
     </div>
   );
 }
+
