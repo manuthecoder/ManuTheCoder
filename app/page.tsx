@@ -98,6 +98,7 @@ function Experience() {
                   width={120}
                   style={{ width: 50, height: 50 }}
                   height={120}
+                  alt={item.name}
                   className="ml-auto"
                 />
               </div>
