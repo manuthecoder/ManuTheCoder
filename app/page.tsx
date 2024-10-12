@@ -12,24 +12,9 @@ function Awards() {
         <div className="flex flex-col gap-3 border-l-2 border-orange-300 pl-4">
           {[
             {
-              issuer: "HackOR",
-              name: "1st place",
-              year: "Spring 2021",
-            },
-            {
-              issuer: "AFA CyberPatriot",
-              name: "Semifinal Round Qualifier",
-              year: "Winter 2022",
-            },
-            {
-              issuer: "CyberForward",
-              name: "Cybersecurity Certification",
-              year: "Spring 2023",
-            },
-            {
-              issuer: "Harvard",
-              name: "CS50x certification",
-              year: "Summer 2023",
+              issuer: "UCI ICS",
+              name: "Data analytics",
+              year: "Summer 2024",
             },
             {
               issuer: "AFA CyberPatriot",
@@ -37,9 +22,24 @@ function Awards() {
               year: "Winter 2023",
             },
             {
-              issuer: "UCI ICS",
-              name: "Data analytics",
-              year: "Summer 2024",
+              issuer: "Harvard",
+              name: "CS50x certification",
+              year: "Summer 2023",
+            },
+            {
+              issuer: "CyberForward",
+              name: "Cybersecurity Certification",
+              year: "Spring 2023",
+            },
+            {
+              issuer: "AFA CyberPatriot",
+              name: "Semifinal Round Qualifier",
+              year: "Winter 2022",
+            },
+            {
+              issuer: "HackOR",
+              name: "1st place",
+              year: "Spring 2021",
             },
           ].map((item) => (
             <div key={item.name} className="relative">
@@ -141,4 +141,3 @@ export default function Home() {
     </main>
   );
 }
-
