@@ -69,17 +69,17 @@ function Experience() {
         <div className="flex flex-col gap-3 border-l-2 border-orange-300 pl-4">
           {[
             {
-              issuer: "City of Irvine",
-              name: "Technology Tutor",
-              year: "September 2022 - Present",
-              image: "/experience/irvine.svg",
-            },
-            {
               issuer: "Hack Club Bank",
               name: "Engineer",
               year: "May 2024 - Present",
               image: "/experience/hcb.png",
             },
+            {
+              issuer: "City of Irvine",
+              name: "Technology Tutor",
+              year: "September 2022 - Present",
+              image: "/experience/irvine.svg",
+            }
           ].map((item) => (
             <div key={item.name} className="relative">
               <div
