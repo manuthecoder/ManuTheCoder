@@ -7,6 +7,28 @@ body {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px 10px transparent;
+  border: solid 3px transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 10px 10px #d9c3a9;
+  border: solid 4px transparent;
+  border-radius: 99px;
+
+  &:hover {
+    box-shadow: inset 0 0 10px 10px #c2ad96;
+  }
+  &:active {
+    box-shadow: inset 0 0 10px 10px #b19d86;
+  }
+}
+
 body {
   font-family: "roc-grotesk", sans-serif;
   font-weight: 400;
@@ -89,3 +111,9 @@ body {
     }
   }
 }
+
+*::selection {
+  background-color: #7c2d12;
+  color: #ffedd5;
+}
+

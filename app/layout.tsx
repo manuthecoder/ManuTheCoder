@@ -4,17 +4,17 @@ import "./globals.scss";
 import { Navbar } from "./Navbar";
 
 export const metadata: Metadata = {
-  title: "@_manu.codes",
+  title: "Manu G",
   description: "Full stack software enthusiast",
   openGraph: {
     type: "profile",
-    username: "@_manu.codes",
+    username: "Manu G",
     images: "/og.png",
     gender: "Male",
-    siteName: "@_manu.codes",
+    siteName: "Manu G",
     locale: "en_US",
     url: "https://manu.is-a.dev",
-    title: "@_manu.codes",
+    title: "Manu G",
     description: "Full stack software enthusiast",
   },
 };
@@ -36,7 +36,10 @@ export default function RootLayout({
         <meta property="og:image" content="/og.png" />
         <meta property="twitter:image" content="/og.png" />
       </head>
-      <body className="flex flex-col min-h-screen w-screen selection:bg-orange-900 selection:text-orange-100 bg-orange-50">
+      <body
+        style={{ maxWidth: "100vw", overflowX: "hidden" }}
+        className="flex flex-col min-h-screen w-screen selection:bg-orange-900 selection:text-orange-100 bg-orange-50"
+      >
         <Navbar />
         <div className="p-5 sm:p-10 pt-0 w-full h-full">{children}</div>
       </body>

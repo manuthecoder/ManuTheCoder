@@ -1,6 +1,6 @@
 # `👋 Hey, my name is Manu`
 
-#### `High school software enthusiast` 
+#### `High school software enthusiast`
 
 ## `🔥 About me`
 
@@ -26,3 +26,4 @@
 ## `👀 Projects`
 
 [Dysperse](https://dysperse.com)
+

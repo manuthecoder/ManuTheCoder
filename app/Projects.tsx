@@ -8,22 +8,20 @@ export function Projects() {
         {[
           {
             name: "Dysperse",
-            status: "New",
             description: "Meet the new standard for productivity.",
             href: "//dysperse.com?ref=manu.is-a.dev",
           },
           {
             name: "Factsify",
-            status: "New",
             description:
               "Turn your Spotify listening habits into a nutrition facts label.",
             href: "https://factsify.pages.dev?ref=manu.is-a.dev",
           },
           {
-            name: "Popvote",
-            status: false,
-            description: "Blazingly fast, real-time group decision making",
-            href: "//popvote.vercel.app",
+            name: "ElmasriAI",
+            status: "New",
+            description: "AI-powered AP Physics tutoring",
+            href: "https://elmasri.my.to?ref=manu.is-a.dev",
           },
         ].map((project) => (
           <a
@@ -48,7 +46,7 @@ export function Projects() {
                   </div>
                 )}
               </h3>
-              <p className="card-subtitle">{project.description}</p>
+              <p className="card-subtitle mr-2">{project.description}</p>
             </div>
             <span className="material-symbols-rounded arrow">north_east</span>
           </a>

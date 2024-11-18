@@ -79,7 +79,7 @@ function Experience() {
               name: "Technology Tutor",
               year: "September 2022 - Present",
               image: "/experience/irvine.svg",
-            }
+            },
           ].map((item) => (
             <div key={item.name} className="relative">
               <div
@@ -113,7 +113,7 @@ function Experience() {
 export default function Home() {
   return (
     <main
-      className="p-7 sm:p-5 sm:px-12 border-2 border-black rounded-3xl bg-orange-50 mx-auto w-full h-full min-h-screen flex flex-col items-center"
+      className="p-7 max-w-5xl sm:p-5 sm:px-12 border-2 border-black rounded-3xl bg-orange-50 mx-auto w-full h-full min-h-screen flex flex-col items-center"
       style={{
         boxShadow: `2px 2px 0 4px black`,
       }}
@@ -121,7 +121,7 @@ export default function Home() {
       <div className="mt-20 flex items-start sm:items-center flex-col max-w-3xl sm:text-center">
         <IntroSection />
       </div>
-      <div className="flex flex-col w-full max-w-5xl my-10 sm:my-20">
+      <div className="flex flex-col w-full my-10 sm:my-20">
         <div className="w-full max-w-md flex content-center items-center">
           <div></div>
         </div>
@@ -141,3 +141,4 @@ export default function Home() {
     </main>
   );
 }
+
