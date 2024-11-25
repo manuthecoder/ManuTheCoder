@@ -3,8 +3,10 @@
 export function Navbar() {
   return (
     <>
-      <div className="absolute sm:fixed top-0 left-0 w-full flex h-20 items-center px-6 sm:px-10 gap-7">
-        <div className="grow font-thin text-[#431407] text-xl">Manu G</div>
+      <div className="absolute  top-0 left-0 w-full flex h-20 items-center px-6 sm:px-10 gap-7">
+        <div className="grow font-thin text-[#431407] text-xl">
+          <span>Manu G</span>
+        </div>
         <div
           className="nav-btn"
           onClick={() => {
