@@ -5,9 +5,6 @@ export function Navbar() {
     <>
       <div className="fixed top-0 left-0 w-full flex h-20 items-center px-6 sm:px-10 gap-7">
         <div className="grow font-extrabold text-xl">Manu G</div>
-        {/* <a href="https://github.com/manuthecoder" className="nav-btn">
-        Github
-      </a> */}
         <div
           className="nav-btn"
           onClick={() => {
