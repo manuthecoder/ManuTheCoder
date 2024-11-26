@@ -2,7 +2,7 @@
 
 🔗 &nbsp;[my website](https://manuthecoder.is-a.dev/)
 
-## With a passion for building things, I'm always looking for new opportunities to learn and grow.
+#### With a passion for building things, I'm always looking for new opportunities to learn and grow.
 
 ## `👨‍🔬 Skills`
 
