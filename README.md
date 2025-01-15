@@ -19,7 +19,7 @@
 - 🏦 &nbsp; Part time software engineer @ HCB
 - 👴 &nbsp; Volunteer tech tutor @ Lakeside Senior Center
 - 🍎 &nbsp; iPhone & Windows
-- 🎢 &nbsp; I enjoy hiking, graphic design, and listening to music
+- 🎢 &nbsp; I enjoy music, graphic design, and biking outside! 
 
 ## `👀 Projects`
 
