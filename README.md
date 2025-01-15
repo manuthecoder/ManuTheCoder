@@ -36,4 +36,5 @@
 ## `🎸 Recently Played`
 
 ![Spotify](https://spotify-recently-played-readme.vercel.app/api?user=gas3v326ti8fyihwazgfuup6t)
+[![Apple Music](https://music-profile.rayriffy.com/theme/dark.svg?uid=000447.bfc6c1ead22940fe92e85336ec9dd994.2122)](https://github.com/rayriffy/apple-music-github-profile)
 
