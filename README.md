@@ -2,7 +2,7 @@
 
 **With a passion for building things, I'm always looking for new opportunities to learn and grow.**
 
-🔗 &nbsp;[my website](https://manuthecoder.is-a.dev/)
+🔗 &nbsp;[Visit my website ↗](https://manuthecoder.is-a.dev/)
 
 ## `👨‍🔬 Skills`
 
@@ -23,15 +23,15 @@
 
 ## `👀 Top projects`
 
-- **[Dysperse](https://dysperse.com)** - Master your momentum.
-- **[Factsify](https://factsify.pages.dev)** - Your Spotify listening habits in a nutrition facts label.
-- **[ElmasriAI](https://elmasri.my.to)** - AP Physics tutoring powered by AI, trained on the official CollegeBoard resources
+- **[Dysperse ↗](https://dysperse.com)** - Master your momentum.
+- **[Factsify ↗](https://factsify.pages.dev)** - Your Spotify listening habits in a nutrition facts label.
+- **[ElmasriAI ↗](https://elmasri.my.to)** - AP Physics tutoring powered by AI, trained on the official CollegeBoard resources
 
 ## `❤ Social`
 
-- 💼 &nbsp; [LinkedIn &rarr;](https://www.linkedin.com/in/manu-codes/)
-- 💭 &nbsp; [DEV.to &rarr;](https://dev.to/manuthecoder)
-- 🧑‍🤝‍🧑 &nbsp; [Discord &rarr;](https://discord.gg/9EJSxkJhnQ)
+- 💼 &nbsp; [LinkedIn ↗](https://www.linkedin.com/in/manu-codes/)
+- 💭 &nbsp; [DEV.to ↗](https://dev.to/manuthecoder)
+- 🧑‍🤝‍🧑 &nbsp; [Discord ↗](https://discord.gg/9EJSxkJhnQ)
 
 ## `🎸 Recently Played`
 
