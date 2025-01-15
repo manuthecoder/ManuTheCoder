@@ -18,7 +18,7 @@
 - 🌎 &nbsp; California, USA
 - 🏦 &nbsp; Part time software engineer @ HCB
 - 👴 &nbsp; Volunteer tech tutor @ Lakeside Senior Center
-- 🍎 &nbsp; iPhone > Android &nbsp; _but_ &nbsp; Windows > Mac
+- 🍎 &nbsp; iPhone & Windows
 - 🎢 &nbsp; I enjoy hiking, graphic design, and listening to music
 
 ## `👀 Projects`
