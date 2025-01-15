@@ -48,3 +48,15 @@
   </tr>
 </table>
 
+## `📈 Stats`
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=manuthecoder&show_icons=true&theme=dark&rank_icon=percentile&include_all_commits=true&hide_title=true&show=prs_merged_percentage&hide_rank=true"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=manuthecoder&show_icons=true&rank_icon=percentile&include_all_commits=true&hide_title=true&show=prs_merged_percentage&hide_rank=true"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img src="https://github-readme-stats.vercel.app/api?username=manuthecoder&show_icons=true&rank_icon=percentile&include_all_commits=true&hide_title=true&show=prs_merged_percentage&hide_rank=true" />
+</picture>
