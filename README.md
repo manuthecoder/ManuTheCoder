@@ -21,11 +21,11 @@
 - 🍎 &nbsp; iPhone & Windows
 - 🎢 &nbsp; I enjoy music, graphic design, and biking outside! 
 
-## `👀 Projects`
+## `👀 Top projects`
 
-- **[Dysperse](https://dysperse.com)** - Meet the new standard for productivity
-- **[Factsify](https://factsify.pages.dev)** - Turn your Spotify listening habits into a nutrition facts label
-- **[ElmasriAI](https://elmasri.my.to)** - AI-powered AP physics tutoring
+- **[Dysperse](https://dysperse.com)** - Master your momentum.
+- **[Factsify](https://factsify.pages.dev)** - Your Spotify listening habits in a nutrition facts label.
+- **[ElmasriAI](https://elmasri.my.to)** - AP Physics tutoring powered by AI, trained on the official CollegeBoard resources
 
 ## `❤ Social`
 
