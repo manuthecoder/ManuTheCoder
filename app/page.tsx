@@ -90,31 +90,50 @@ function TvShows() {
   return (
     <div className="w-full">
       <h2 className="subheading">Favorite TV shows</h2>
-      <div className="grid grid-cols-4 flex gap-2">
-        <div className="overflow-hidden rounded-md">
-          <img
-            className="cover"
-            src="https://m.media-amazon.com/images/M/MV5BNzBiODQxZTUtNjc0MC00Yzc1LThmYTMtN2YwYTU3NjgxMmI4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      <div className="grid grid-cols-2 lg:grid-cols-4 flex gap-2">
+        <a
+          href="https://www.netflix.com/title/70281562"
+          className="overflow-hidden rounded-md relative w-full"
+          style={{ aspectRatio: "2480/3508" }}
+        >
+          <Image
+            loading="lazy"
+            src="/movies/brooklyn99.jpg"
+            alt="Brooklyn Nine-Nine"
+            fill
           />
-        </div>
-        <div className="overflow-hidden rounded-md">
-          <img
-            className="cover"
-            src="https://m.media-amazon.com/images/M/MV5BMmRjNjZjN2ItN2FkYi00ZDg0LWExN2EtMTU2ODUwNWU1M2NhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        </a>
+        <a
+          href="https://www.netflix.com/title/70153373"
+          className="overflow-hidden rounded-md relative w-full"
+          style={{ aspectRatio: "2480/3508" }}
+        >
+          <Image
+            loading="lazy"
+            src="/movies/seinfeld.jpg"
+            alt="Seinfeld"
+            fill
           />
-        </div>
-        <div className="overflow-hidden rounded-md">
-          <img
-            className="cover"
-            src="https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_QL75_UY281_CR1,0,190,281_.jpg"
+        </a>
+        <a
+          href="https://www.netflix.com/za/title/70136140"
+          className="overflow-hidden rounded-md relative w-full"
+          style={{ aspectRatio: "2480/3508" }}
+        >
+          <Image loading="lazy" src="/movies/friends.png" alt="Friends" fill />
+        </a>
+        <a
+          href="https://www.netflix.com/in/title/70153404"
+          className="overflow-hidden rounded-md relative w-full"
+          style={{ aspectRatio: "2480/3508" }}
+        >
+          <Image
+            loading="lazy"
+            src="/movies/startrek.jpg"
+            alt="Star Trek"
+            fill
           />
-        </div>
-        <div className="overflow-hidden rounded-md">
-          <img
-            className="cover"
-            src="https://m.media-amazon.com/images/M/MV5BMmIyYjI0YzUtOWRiZS00NDJhLThiZTktNDkyYzg4Yjg5YmJmXkEyXkFqcGc@._V1_.jpg"
-          />
-        </div>
+        </a>
       </div>
     </div>
   );
@@ -147,7 +166,7 @@ export default function Home() {
         <div className="flex-grow">
           <div className="flex-grow flex-col lg:flex-row w-full flex gap-8">
             <div className="w-full flex flex-col gap-8">
-              <AboutMe />
+              {/* <AboutMe /> */}
               <Skills />
               <Awards />
               <Experience />
