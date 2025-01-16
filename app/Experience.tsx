@@ -11,12 +11,14 @@ export function Experience() {
             {
               issuer: "Hack Club Bank",
               name: "Engineer",
+              link: "https://hackclub.com/fiscal-sponsorship/",
               year: "May 2024 - Present",
               image: "/experience/hcb.png",
             },
             {
               issuer: "City of Irvine",
               name: "Technology Tutor",
+              link: "https://www.cityofirvine.org/senior-services/lakeview-senior-center-facilities",
               year: "September 2022 - Present",
               image: "/experience/irvine.svg",
             },
@@ -29,9 +31,19 @@ export function Experience() {
               <div className="pt-0 flex items-center gap-2">
                 <div>
                   <h5 className="text-xs opacity-70">{item.year}</h5>
-                  <h6>
-                    <b style={{ fontWeight: 600 }}>{item.issuer}</b> {item.name}
-                  </h6>
+                  <div>
+                    <h6>
+                      <b style={{ fontWeight: 600 }}>{item.issuer}</b>{" "}
+                      {item.name}
+                    </h6>
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      className="text-xs opacity-50 block"
+                    >
+                      Visit website
+                    </a>
+                  </div>
                 </div>
                 <Image
                   src={item.image}

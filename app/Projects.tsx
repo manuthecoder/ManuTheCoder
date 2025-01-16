@@ -3,24 +3,28 @@ import Image from "next/image";
 export function Projects() {
   return (
     <div className="w-full">
-      <h2 className="subheading">Projects</h2>
+      <div className="flex items-center justify-between">
+        <h2 className="subheading">Projects</h2>
+        <h3 className="text-xs opacity-50 mr-3 subheading font-thin">
+          Tap to view
+        </h3>
+      </div>
       <div className="flex flex-col gap-3">
         {[
           {
             name: "Dysperse",
-            description: "Meet the new standard for productivity.",
+            description: "Productivity for humans",
             href: "//dysperse.com?ref=manu.bymanu.me",
           },
           {
             name: "Factsify",
-            description:
-              "Turn your Spotify listening habits into a nutrition facts label.",
+            description: "Your Spotify stats in a nutrition facts label",
             href: "https://factsify.bymanu.me?ref=bymanu.me",
           },
           {
             name: "ElmasriAI",
             status: "New",
-            description: "AI-powered AP Physics tutoring",
+            description: "AP physics tutoring powered by AI",
             href: "https://elmasri.bymanu.me?ref=bymanu.me",
           },
         ].map((project) => (
@@ -48,7 +52,9 @@ export function Projects() {
               </h3>
               <p className="card-subtitle mr-2">{project.description}</p>
             </div>
-            <span className="material-symbols-rounded arrow">north_east</span>
+            <span className="material-symbols-rounded text-orange-950">
+              arrow_forward_ios
+            </span>
           </a>
         ))}
       </div>
