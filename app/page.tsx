@@ -49,7 +49,9 @@ function Spotify() {
             </h3>
             <p className="card-subtitle mr-2">
               {(data
-                ? data?.item?.artists?.map((artist) => artist.name).join(", ")
+                ? data?.item?.artists
+                    ?.map((artist: any) => artist.name)
+                    .join(", ")
                 : error || data?.error
                 ? "Try again later"
                 : !data?.item?.name
