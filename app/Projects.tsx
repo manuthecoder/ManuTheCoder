@@ -5,9 +5,6 @@ export function Projects() {
     <div className="w-full">
       <div className="flex items-center justify-between">
         <h2 className="subheading">Projects</h2>
-        <h3 className="text-xs opacity-50 mr-3 subheading font-thin">
-          Tap to view
-        </h3>
       </div>
       <div className="flex flex-col gap-3">
         {[
