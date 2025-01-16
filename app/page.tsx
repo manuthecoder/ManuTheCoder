@@ -10,6 +10,7 @@ export default function Home() {
     <main
       className="p-7 max-w-5xl sm:p-5 sm:px-12 border-2 border-[#431407] rounded-3xl bg-orange-50 mx-auto w-full h-full min-h-screen flex flex-col items-center page-container"
       style={{ boxShadow: `2px 2px 0 4px #431407` }}
+      onClick={() => { new Audio('./click.mp3').play() }}
     >
       <div className="mt-20 flex items-start sm:items-center flex-col max-w-3xl sm:text-center">
         <IntroSection />
