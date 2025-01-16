@@ -2,7 +2,7 @@
 export function Awards() {
   return (
     <div className="w-full">
-      <h2 className="subheading mt-4">Awards & certifications</h2>
+      <h2 className="subheading">Awards & certifications</h2>
       <div className="pl-2">
         <div className="flex flex-col gap-3 border-l-2 border-orange-300 pl-4">
           {[

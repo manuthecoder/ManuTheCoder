@@ -5,6 +5,120 @@ import { Projects } from "./Projects";
 import { Awards } from "./Awards";
 import { Experience } from "./Experience";
 import { useEffect } from "react";
+import Image from "next/image";
+import useSWR from "swr";
+
+function Spotify() {
+  const { data, error } = useSWR(
+    "https://api.dysperse.com/user/currently-playing?isManu=true",
+    async (url) => {
+      const response = await fetch(url);
+      return response.json();
+    },
+    { refreshInterval: 4000 }
+  );
+
+  return (
+    <div className="w-full">
+      <div className="flex items-center mb-2 gap-2">
+        <Image src="/spotify.svg" width={20} height={20} alt="Spotify logo" />
+        <h2 className="subheading mr-auto mb-0">Currently playing</h2>
+        {data?.item && (
+          <div className="chip bg-red-900 text-red-50 font-medium text-xs">
+            LIVE
+          </div>
+        )}
+      </div>
+      <div className="flex flex-col gap-3">
+        <a
+          className="card overflow-hidden no-underline"
+          href={data?.item?.external_urls?.spotify}
+          target="_blank"
+        >
+          <div className="flex-1">
+            <h3 className="card-title max-w-full font-bold flex items-center gap-x-3 gap-y-1 pr-20 flex-wrap-reverse">
+              <span>
+                {(data
+                  ? data?.item?.name
+                  : error || data?.error
+                  ? "Something went wrong"
+                  : !data?.item?.name
+                  ? "Hang tight..."
+                  : "No music!?") || "No music!?"}{" "}
+              </span>
+            </h3>
+            <p className="card-subtitle mr-2">
+              {(data
+                ? data?.item?.artists?.map((artist) => artist.name).join(", ")
+                : error || data?.error
+                ? "Try again later"
+                : !data?.item?.name
+                ? "Loading..."
+                : "Come back later!") || "Come back later!"}
+            </p>
+          </div>
+          {data?.item?.album?.images?.[0]?.url && (
+            <img
+              src={data?.item?.album?.images?.[0]?.url}
+              width={50}
+              height={50}
+              alt={`${data?.item?.name} album cover`}
+              className="rounded-lg shrink-0 -mr-1"
+            />
+          )}
+        </a>
+      </div>
+    </div>
+  );
+}
+
+function AboutMe() {
+  return (
+    <div className="w-full">
+      <h2 className="subheading">About me</h2>
+      <p>
+        Hey! I&apos;m Manu, and I bring ideas to life through code. When
+        I&apos;m not crafting new projects, you&apos;ll find me biking around
+        town, listening to music, binge-watching Netflix, or hanging out with
+        friends.
+      </p>
+    </div>
+  );
+}
+
+function TvShows() {
+  return (
+    <div className="w-full">
+      <h2 className="subheading">Favorite TV shows</h2>
+      <div className="grid grid-cols-4 flex gap-2">
+        <div className="overflow-hidden rounded-md">
+          <img
+            className="cover"
+            src="https://m.media-amazon.com/images/M/MV5BNzBiODQxZTUtNjc0MC00Yzc1LThmYTMtN2YwYTU3NjgxMmI4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          />
+        </div>
+        <div className="overflow-hidden rounded-md">
+          <img
+            className="cover"
+            src="https://m.media-amazon.com/images/M/MV5BMmRjNjZjN2ItN2FkYi00ZDg0LWExN2EtMTU2ODUwNWU1M2NhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          />
+        </div>
+        <div className="overflow-hidden rounded-md">
+          <img
+            className="cover"
+            src="https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_QL75_UY281_CR1,0,190,281_.jpg"
+          />
+        </div>
+        <div className="overflow-hidden rounded-md">
+          <img
+            className="cover"
+            src="https://m.media-amazon.com/images/M/MV5BMmIyYjI0YzUtOWRiZS00NDJhLThiZTktNDkyYzg4Yjg5YmJmXkEyXkFqcGc@._V1_.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   useEffect(() => {
@@ -33,12 +147,15 @@ export default function Home() {
         <div className="flex-grow">
           <div className="flex-grow flex-col lg:flex-row w-full flex gap-8">
             <div className="w-full flex flex-col gap-8">
+              <AboutMe />
               <Skills />
               <Awards />
+              <Experience />
             </div>
             <div className="w-full flex flex-col gap-8">
               <Projects />
-              <Experience />
+              <Spotify />
+              <TvShows />
             </div>
           </div>
         </div>

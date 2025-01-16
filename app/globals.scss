@@ -105,6 +105,9 @@ body {
   .subheading {
     @apply text-xl text-orange-900 mb-2 font-[600];
   }
+  .cover {
+    @apply w-full h-full object-cover;
+  }
 
   .card {
     @apply border border-[#431407] px-5 py-3 rounded-3xl select-none flex relative gap-5 items-center;

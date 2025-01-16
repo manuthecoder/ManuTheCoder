@@ -14,16 +14,21 @@ export function Projects() {
             href: "//dysperse.com?ref=manu.bymanu.me",
           },
           {
-            name: "Factsify",
-            description: "Your Spotify stats in a nutrition facts label",
-            href: "https://factsify.bymanu.me?ref=bymanu.me",
-          },
-          {
             name: "ElmasriAI",
             status: "New",
             description: "AP physics tutoring powered by AI",
             href: "https://elmasri.bymanu.me?ref=bymanu.me",
           },
+          {
+            name: "Factsify",
+            description: "Your Spotify stats in a nutrition facts label",
+            href: "https://factsify.bymanu.me?ref=bymanu.me",
+          },
+          // {
+          //   name: "IHSMUN",
+          //   description: "Fun website for my school's Model UN club",
+          //   href: "https://github.com/manuthecoder/setup",
+          // },
         ].map((project) => (
           <a
             className="card overflow-hidden no-underline"
@@ -32,11 +37,12 @@ export function Projects() {
             target="_blank"
           >
             <Image
-              src={`/projects/${project.name.toLowerCase()}.png`}
+              src={`/projects/${project.name.toLowerCase()}.png?ref=manu.bymanu.me`}
               width={50}
               height={50}
               alt={`${project.name} logo`}
               className="card-logo shrink-0"
+              style={{ borderRadius: 0 }}
             />
             <div className="w-full min-w-0">
               <h3 className="card-title max-w-full font-bold flex items-center gap-x-3 gap-y-1 pr-20 flex-wrap-reverse">
@@ -49,9 +55,7 @@ export function Projects() {
               </h3>
               <p className="card-subtitle mr-2">{project.description}</p>
             </div>
-            <span className="material-symbols-rounded text-orange-950">
-              arrow_forward_ios
-            </span>
+            <span className="material-symbols-rounded arrow">north_east</span>
           </a>
         ))}
       </div>
