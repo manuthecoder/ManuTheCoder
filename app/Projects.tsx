@@ -9,19 +9,19 @@ export function Projects() {
           {
             name: "Dysperse",
             description: "Meet the new standard for productivity.",
-            href: "//dysperse.com?ref=manu.is-a.dev",
+            href: "//dysperse.com?ref=manu.bymanu.me",
           },
           {
             name: "Factsify",
             description:
               "Turn your Spotify listening habits into a nutrition facts label.",
-            href: "https://factsify.pages.dev?ref=manu.is-a.dev",
+            href: "https://factsify.bymanu.me?ref=bymanu.me",
           },
           {
             name: "ElmasriAI",
             status: "New",
             description: "AI-powered AP Physics tutoring",
-            href: "https://elmasri.my.to?ref=manu.is-a.dev",
+            href: "https://elmasri.bymanu.me?ref=bymanu.me",
           },
         ].map((project) => (
           <a

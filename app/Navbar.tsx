@@ -13,10 +13,10 @@ export function Navbar() {
             try {
               navigator.share({
                 text: "Check out Manu G - full stack software enthusiast",
-                url: "https://manu.is-a.dev",
+                url: "https://bymanu.me",
               });
             } catch (e) {
-              navigator.clipboard.writeText("https://manu.is-a.dev");
+              navigator.clipboard.writeText("https://bymanu.me");
               alert("Copied link to clipboard!");
             }
           }}

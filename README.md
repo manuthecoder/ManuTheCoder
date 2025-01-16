@@ -2,7 +2,7 @@
 
 **With a passion for building things, I'm always looking for new opportunities to learn and grow.**
 
-🔗 &nbsp;[Visit my website ↗](https://manuthecoder.is-a.dev/)
+🔗 &nbsp;[Visit my website ↗](https://manuthecoder.bymanu.me/)
 
 ## `👨‍🔬 Skills`
 
@@ -19,13 +19,13 @@
 - 🏦 &nbsp; Part time software engineer @ HCB
 - 👴 &nbsp; Volunteer tech tutor @ Lakeside Senior Center
 - 🍎 &nbsp; iPhone & Windows
-- 🎢 &nbsp; I enjoy music, graphic design, and biking outside! 
+- 🎢 &nbsp; I enjoy music, graphic design, and biking outside!
 
 ## `👀 Top projects`
 
 - **[Dysperse ↗](https://dysperse.com)** - Master your momentum.
-- **[Factsify ↗](https://factsify.pages.dev)** - Your Spotify listening habits in a nutrition facts label.
-- **[ElmasriAI ↗](https://elmasri.my.to)** - AP Physics tutoring powered by AI, trained on the official CollegeBoard resources
+- **[Factsify ↗](https://factsify.bymanu.me)** - Your Spotify listening habits in a nutrition facts label.
+- **[ElmasriAI ↗](https://elmasri.bymanu.me)** - AP Physics tutoring powered by AI, trained on the official CollegeBoard resources
 
 ## `❤ Social`
 
@@ -49,6 +49,7 @@
 </table>
 
 ## `📈 Stats`
+
 <picture>
   <source
     srcset="https://github-readme-stats.vercel.app/api?username=manuthecoder&show_icons=true&theme=dark&rank_icon=percentile&include_all_commits=true&hide_title=true&show=prs_merged_percentage&hide_rank=true"
@@ -60,3 +61,4 @@
   />
   <img src="https://github-readme-stats.vercel.app/api?username=manuthecoder&show_icons=true&rank_icon=percentile&include_all_commits=true&hide_title=true&show=prs_merged_percentage&hide_rank=true" />
 </picture>
+

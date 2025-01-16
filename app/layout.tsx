@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     gender: "Male",
     siteName: "Manu G",
     locale: "en_US",
-    url: "https://manu.is-a.dev",
+    url: "https://bymanu.me",
     title: "Manu G",
     description: "Full stack software enthusiast",
   },
