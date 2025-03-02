@@ -35,6 +35,27 @@ export default function RootLayout({
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="og:image" content="/og.png" />
         <meta property="twitter:image" content="/og.png" />
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "name": "Manusvath Gurudath",
+            "url": "https://bymanu.me",
+            "image": "https://media.licdn.com/dms/image/v2/D5603AQEWo60yZN1DFg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1710376372022?e=1746662400&v=beta&t=sU16Gj3n_nfRdlouLDXLzknudXxo2_xeJAWiMih6pSY",
+            "sameAs": [
+              "https://x.com/getdysperse",
+              "https://instagram.com/dysperse",
+              "https://github.com/manuthecoder",
+              "https://linkedin.com/in/manu-codes",
+              "https://www.youtube.com/@manu-codes"
+            ],
+            "jobTitle": "Software Engineer",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Hack Club"
+            }  
+          }
+        </script>
       </head>
       <body
         style={{ maxWidth: "100vw", overflowX: "hidden" }}
