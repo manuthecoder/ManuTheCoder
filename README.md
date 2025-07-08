@@ -35,7 +35,7 @@
 
 <img src="https://spotify-recently-played-readme.vercel.app/api?user=gas3v326ti8fyihwazgfuup6t" height="200">
 
-## `📈 Stats`
+### `📈 Stats`
 
 <picture>
   <source
