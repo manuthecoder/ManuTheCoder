@@ -35,18 +35,7 @@
 
 ### `🎸 Recently Played`
 
-<table>
-  <tr>
-    <td>
-      <img src="https://spotify-recently-played-readme.vercel.app/api?user=gas3v326ti8fyihwazgfuup6t" height="200">
-    </td>
-    <td>
-      <a href="https://github.com/rayriffy/apple-music-github-profile">
-        <img src="https://music-profile.rayriffy.com/theme/dark.svg?uid=000447.bfc6c1ead22940fe92e85336ec9dd994.2122" height="200">
-      </a>
-    </td>
-  </tr>
-</table>
+<img src="https://spotify-recently-played-readme.vercel.app/api?user=gas3v326ti8fyihwazgfuup6t" height="200">
 
 ## `📈 Stats`
 
