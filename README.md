@@ -3,7 +3,10 @@
 **With a passion for building things, I'm always looking for new opportunities to learn and grow.**
 
 🔗 &nbsp;[Visit my website ↗](https://manuthecoder.bymanu.me)
+<br/>
 🔗 &nbsp;[LinkedIn ↗](https://linkedin.com/in/manu-codes)
+
+
 
 ### `👨‍🔬 Skills`
 
