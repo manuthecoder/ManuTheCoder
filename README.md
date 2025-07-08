@@ -21,9 +21,9 @@
 
 - 🌎 &nbsp; California, USA
 - 🏦 &nbsp; Software engineer @ HCB
-- 👴 &nbsp; Volunteer tech tutor @ Lakeside Senior Center
+- 👴 &nbsp; Technology tutor @ Lakeview Senior Center
 - 🍎 &nbsp; iPhone & Windows
-- 🎢 &nbsp; I enjoy music, graphic design, and biking outside!
+- 🎢 &nbsp; I enjoy music, graphic design, and traveling
 
 ### `👀 Top projects`
 
