@@ -6,10 +6,10 @@
 
 ### `👨‍🔬 Skills`
 
-- 💎 Ruby
+- 💎 Ruby on Rails
 - 🕸️ Typescript
   - ⚛️ React & Next.JS, React Native & Expo
-  - ✨ SCSS/CSS
+- ✨ SCSS
 - ☕ Java
 - 🐍 Python
 
