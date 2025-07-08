@@ -1,4 +1,4 @@
-# 👋 I'm Manu, a full stack software enthusiast.
+### 👋 I'm Manu, a full stack software enthusiast.
 
 **With a passion for building things, I'm always looking for new opportunities to learn and grow.**
 
