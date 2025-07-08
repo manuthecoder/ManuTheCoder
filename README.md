@@ -20,7 +20,7 @@
 ### `🔥 About me`
 
 - 🌎 &nbsp; California, USA
-- 🏦 &nbsp; Part time software engineer @ HCB
+- 🏦 &nbsp; Software engineer @ HCB
 - 👴 &nbsp; Volunteer tech tutor @ Lakeside Senior Center
 - 🍎 &nbsp; iPhone & Windows
 - 🎢 &nbsp; I enjoy music, graphic design, and biking outside!
