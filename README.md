@@ -30,6 +30,9 @@
 - **[Factsify ↗](https://factsify.bymanu.me)** - Your Spotify listening habits in a nutrition facts label.
 - **[ElmasriAI ↗](https://elmasri.bymanu.me)** - AP Physics tutoring powered by AI, trained on the official CollegeBoard resources
 
+### `✨ My workspace`
+<img src="https://github.com/user-attachments/assets/541fa393-9740-480f-a12e-0e0792e3258f" height="200">
+
 ### `🎸 Recently Played`
 
 <img src="https://spotify-recently-played-readme.vercel.app/api?user=gas3v326ti8fyihwazgfuup6t" height="200">
