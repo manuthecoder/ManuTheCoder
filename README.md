@@ -20,9 +20,8 @@
 ### `🔥 About me`
 
 - 🌎 &nbsp; California, USA
-- 🏦 &nbsp; Software engineer @ HCB
+- 🏦 &nbsp; Software engineer @ [HCB](https://hackclub.com/fiscal-sponsorship/)
 - 👴 &nbsp; Technology tutor @ Lakeview Senior Center
-- 🍎 &nbsp; iPhone & Windows
 - 🎢 &nbsp; I enjoy music, graphic design, and traveling
 
 ### `👀 Top projects`
