@@ -64,7 +64,6 @@ function Spotify() {
   return (
     <div className="w-full">
       <div className="flex items-center mb-2 gap-2">
-        <Image src="/spotify.svg" width={20} height={20} alt="Spotify logo" />
         <h2 className="subheading mr-auto mb-0">Currently playing</h2>
         {data?.item && (
           <div
