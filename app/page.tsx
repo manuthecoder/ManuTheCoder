@@ -219,6 +219,23 @@ export default function Home() {
         <IntroSection />
       </div>
       <div className="flex flex-col w-full my-10 sm:my-20">
+        <div className="flex gap-2 flex-col sm:flex-row w-full bg-orange-100 py-5 px-5 sm:px-10 mb-10 rounded-2xl sm:rounded-full">
+          <div>
+            <b>Help a rising college student out!</b>
+            <br />
+            <span className="text-sm opacity-50">
+              I&apos;d much appreciate any support as I continue to build my
+              portfolio and work on exciting projects.
+            </span>
+          </div>
+          <a
+            target="_blank"
+            href="https://donate.stripe.com/cNi5kD3rr6vygHPccweIw01"
+            className="bg-yellow-500 btn text-yellow-950 btn flex items-center gap-3 sm:ml-auto justify-center"
+          >
+            Donate!
+          </a>
+        </div>
         <div className="w-full max-w-md flex content-center items-center">
           <div></div>
         </div>
