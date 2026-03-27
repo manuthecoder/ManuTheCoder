@@ -9,20 +9,20 @@ export function Projects() {
       <div className="flex flex-col gap-3">
         {[
           {
-            name: "Dysperse",
-            description: "Productivity for humans",
-            href: "//dysperse.com?ref=manu.bymanu.me",
-          },
-          {
-            name: "ElmasriAI",
-            status: "New",
-            description: "AP physics tutoring powered by AI",
-            href: "https://elmasri.bymanu.me?ref=bymanu.me",
-          },
-          {
             name: "Factsify",
             description: "Your Spotify stats in a nutrition facts label",
             href: "https://factsify.bymanu.me?ref=bymanu.me",
+          },
+          {
+            name: "Dysperse",
+            description: "Productivity for humans",
+            href: "https://dysperse.com?ref=manu.bymanu.me",
+          },
+          {
+            name: "ElmasriAI",
+            // status: "New",
+            description: "AP physics tutoring powered by AI",
+            href: "https://elmasri.bymanu.me?ref=bymanu.me",
           },
           // {
           //   name: "IHSMUN",
@@ -62,4 +62,3 @@ export function Projects() {
     </div>
   );
 }
-

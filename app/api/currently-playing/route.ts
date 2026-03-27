@@ -1,4 +1,4 @@
-export const revalidate = 10;
+export const revalidate = 1;
 
 export async function GET() {
   const response = await fetch(
@@ -19,15 +19,21 @@ export async function GET() {
 
   const { access_token } = await response.json();
 
-  // get currently playing track
-  const currentlyPlayingResponse = await fetch(
-    "https://api.spotify.com/v1/me/player/currently-playing",
-    {
-      headers: {
-        Authorization: `Bearer ${access_token}`,
+  let currentlyPlayingResponse = {};
+  try {
+    // get currently playing track
+    currentlyPlayingResponse = await fetch(
+      "https://api.spotify.com/v1/me/player/currently-playing",
+      {
+        headers: {
+          Authorization: `Bearer ${access_token}`,
+        },
       },
-    },
-  ).then((r) => r.json());
+    ).then((r) => r.json());
+  } catch (error) {
+    console.error("Error fetching currently playing track:", error);
+    currentlyPlayingResponse = {};
+  }
 
   return Response.json(currentlyPlayingResponse);
 }

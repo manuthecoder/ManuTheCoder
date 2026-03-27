@@ -1,15 +1,58 @@
 "use client";
-import { IntroSection } from "./IntroSection";
-import { Skills } from "./Skills";
-import { Projects } from "./Projects";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import useSWR from "swr";
 import { Awards } from "./Awards";
 import { Experience } from "./Experience";
-import { useEffect } from "react";
-import Image from "next/image";
-import useSWR from "swr";
+import { IntroSection } from "./IntroSection";
+import { Projects } from "./Projects";
+import { Skills } from "./Skills";
+
+function ProgressBar({ data }: { data: any }) {
+  const [progress, setProgress] = useState(data?.progress_ms ?? 0);
+  const base = useRef(data?.progress_ms ?? 0);
+  const start = useRef(Date.now());
+
+  const duration = data?.item?.duration_ms ?? 0;
+  const isPlaying = data?.is_playing ?? false;
+
+  useEffect(() => {
+    base.current = data?.progress_ms ?? 0;
+    start.current = Date.now();
+    setProgress(base.current);
+  }, [data]);
+
+  useEffect(() => {
+    if (!isPlaying || !duration) return;
+    const id = setInterval(() => {
+      setProgress(
+        Math.min(base.current + (Date.now() - start.current), duration),
+      );
+    }, 500);
+    return () => clearInterval(id);
+  }, [isPlaying, duration, data]);
+
+  const fmt = (ms: number) => {
+    const s = Math.floor(ms / 1000);
+    return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+  };
+
+  return (
+    <div className="flex items-center gap-3 w-full mt-2 text-[10px] text-[#431407]/60 font-medium tabular-nums">
+      <span>{fmt(progress)}</span>
+      <div className="relative w-full bg-orange-200 rounded-full h-1.5 group cursor-pointer">
+        <div
+          style={{ width: `${(progress / duration) * 100}%` }}
+          className="h-full rounded-full bg-[#431407] transition-[width] duration-500 ease-linear relative"
+        />
+      </div>
+      <span className="-mr-1">{fmt(duration)}</span>
+    </div>
+  );
+}
 
 function Spotify() {
-  const { data, error } = useSWR(
+  const { data, mutate, error } = useSWR(
     "/api/currently-playing",
     async (url) => {
       const response = await fetch(url);
@@ -25,6 +68,7 @@ function Spotify() {
         <h2 className="subheading mr-auto mb-0">Currently playing</h2>
         {data?.item && (
           <div
+            onMouseOver={() => mutate()}
             className="chip bg-red-900 text-red-50 font-medium text-xs"
             title="yes, this is actually what's playing right now!"
           >
@@ -35,43 +79,52 @@ function Spotify() {
       </div>
       <div className="flex flex-col gap-3">
         <a
-          className="card overflow-hidden no-underline"
+          className="card overflow-hidden no-underline block"
           href={data?.item?.external_urls?.spotify}
           target="_blank"
         >
-          <div className="flex-1">
-            <h3 className="card-title max-w-full font-bold flex items-center gap-x-3 gap-y-1 pr-20 flex-wrap-reverse">
-              <span>
+          <div className="flex items-center">
+            <div className="flex-1">
+              <p
+                className="card-subtitle -mb-0.5 mr-2 uppercase opacity-50 font-semibold"
+                style={{ fontSize: "10px" }}
+              >
+                {data?.item?.album?.name || ""}
+              </p>
+              <h3 className="card-title max-w-full font-bold flex items-center gap-x-3 gap-y-1 pr-20 flex-wrap-reverse">
+                <span>
+                  {(data
+                    ? data?.item?.name
+                    : error || data?.error
+                      ? "Something went wrong"
+                      : !data?.item?.name
+                        ? "Hang tight..."
+                        : "No music!?") || "No music!?"}{" "}
+                </span>
+              </h3>
+              <p className="card-subtitle mr-2 -mt-0.5">
                 {(data
-                  ? data?.item?.name
+                  ? data?.item?.artists
+                      ?.map((artist: any) => artist.name)
+                      .join(", ")
                   : error || data?.error
-                    ? "Something went wrong"
+                    ? "Try again later"
                     : !data?.item?.name
-                      ? "Hang tight..."
-                      : "No music!?") || "No music!?"}{" "}
-              </span>
-            </h3>
-            <p className="card-subtitle mr-2">
-              {(data
-                ? data?.item?.artists
-                    ?.map((artist: any) => artist.name)
-                    .join(", ")
-                : error || data?.error
-                  ? "Try again later"
-                  : !data?.item?.name
-                    ? "Loading..."
-                    : "Come back later!") || "Come back later!"}
-            </p>
+                      ? "Loading..."
+                      : "Come back later!") || "Come back later!"}
+              </p>
+            </div>
+            {data?.item?.album?.images?.[0]?.url && (
+              <img
+                src={data?.item?.album?.images?.[0]?.url}
+                width={50}
+                height={50}
+                alt={`${data?.item?.name} album cover`}
+                className="rounded-lg shrink-0 -mr-1"
+              />
+            )}
           </div>
-          {data?.item?.album?.images?.[0]?.url && (
-            <img
-              src={data?.item?.album?.images?.[0]?.url}
-              width={50}
-              height={50}
-              alt={`${data?.item?.name} album cover`}
-              className="rounded-lg shrink-0 -mr-1"
-            />
-          )}
+          {data?.is_playing && <ProgressBar data={data} />}
         </a>
       </div>
     </div>
