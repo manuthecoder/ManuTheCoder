@@ -50,8 +50,8 @@ export function Projects() {
                 {/*{project.status && (
                   <div className="chip bg-orange-200 font-medium text-xs -ml-1">
                     {project.status}
-                  </div>*/}
-                )}
+                  </div>
+                )}*/}
               </h3>
               <p className="card-subtitle mr-2">{project.description}</p>
             </div>
