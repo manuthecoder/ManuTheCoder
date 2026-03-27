@@ -110,7 +110,8 @@ function Spotify() {
                     ? "Try again later"
                     : !data?.item?.name
                       ? "Loading..."
-                      : "Come back later!") || "Come back later!"}
+                      : "Come back later! You'll see what I'm listening to on Spotify here!") ||
+                  "Come back later! You'll see what I'm listening to on Spotify here!"}
               </p>
             </div>
             {data?.item?.album?.images?.[0]?.url && (
