@@ -47,10 +47,10 @@ export function Projects() {
             <div className="w-full min-w-0">
               <h3 className="card-title max-w-full font-bold flex items-center gap-x-3 gap-y-1 pr-20 flex-wrap-reverse">
                 <span>{project.name}</span>
-                {project.status && (
+                {/*{project.status && (
                   <div className="chip bg-orange-200 font-medium text-xs -ml-1">
                     {project.status}
-                  </div>
+                  </div>*/}
                 )}
               </h3>
               <p className="card-subtitle mr-2">{project.description}</p>
