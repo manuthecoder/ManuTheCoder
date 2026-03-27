@@ -10,12 +10,12 @@ import useSWR from "swr";
 
 function Spotify() {
   const { data, error } = useSWR(
-    "https://api.dysperse.com/user/currently-playing?isManu=true",
+    "/api/currently-playing",
     async (url) => {
       const response = await fetch(url);
       return response.json();
     },
-    { refreshInterval: 4000 }
+    { refreshInterval: 30 * 1000 },
   );
 
   return (
@@ -24,7 +24,11 @@ function Spotify() {
         <Image src="/spotify.svg" width={20} height={20} alt="Spotify logo" />
         <h2 className="subheading mr-auto mb-0">Currently playing</h2>
         {data?.item && (
-          <div className="chip bg-red-900 text-red-50 font-medium text-xs">
+          <div
+            className="chip bg-red-900 text-red-50 font-medium text-xs"
+            title="yes, this is actually what's playing right now!"
+          >
+            <div className="animate-pulse w-1.5 h-1.5 rounded-full bg-red-50"></div>
             LIVE
           </div>
         )}
@@ -41,10 +45,10 @@ function Spotify() {
                 {(data
                   ? data?.item?.name
                   : error || data?.error
-                  ? "Something went wrong"
-                  : !data?.item?.name
-                  ? "Hang tight..."
-                  : "No music!?") || "No music!?"}{" "}
+                    ? "Something went wrong"
+                    : !data?.item?.name
+                      ? "Hang tight..."
+                      : "No music!?") || "No music!?"}{" "}
               </span>
             </h3>
             <p className="card-subtitle mr-2">
@@ -53,10 +57,10 @@ function Spotify() {
                     ?.map((artist: any) => artist.name)
                     .join(", ")
                 : error || data?.error
-                ? "Try again later"
-                : !data?.item?.name
-                ? "Loading..."
-                : "Come back later!") || "Come back later!"}
+                  ? "Try again later"
+                  : !data?.item?.name
+                    ? "Loading..."
+                    : "Come back later!") || "Come back later!"}
             </p>
           </div>
           {data?.item?.album?.images?.[0]?.url && (
@@ -184,4 +188,3 @@ export default function Home() {
     </main>
   );
 }
-
