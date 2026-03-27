@@ -7,6 +7,7 @@ import { Experience } from "./Experience";
 import { IntroSection } from "./IntroSection";
 import { Projects } from "./Projects";
 import { Skills } from "./Skills";
+import { Analytics } from "@vercel/analytics/next";
 
 function ProgressBar({ data }: { data: any }) {
   const [progress, setProgress] = useState(data?.progress_ms ?? 0);
@@ -218,6 +219,7 @@ export default function Home() {
       <div className="mt-20 flex items-start sm:items-center flex-col max-w-3xl sm:text-center">
         <IntroSection />
       </div>
+      <Analytics />
       <div className="flex flex-col w-full my-10 sm:my-20">
         <div className="flex gap-2 flex-col sm:flex-row w-full bg-orange-100 py-5 px-5 sm:px-10 mb-10 rounded-2xl sm:rounded-full">
           <div>
