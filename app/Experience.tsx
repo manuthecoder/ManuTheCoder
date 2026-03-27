@@ -14,13 +14,17 @@ export function Experience() {
               link: "https://hackclub.com/fiscal-sponsorship/",
               year: "May 2024 - Present",
               image: "/experience/hcb.png",
+              description:
+                "Led the complete redesign of UI3, rewriting 70% of the codebase for an open-source fiscal sponsorship platform serving 1,000+ organizations. Shipped production features in Ruby on Rails across payment flows, onboarding, and core infrastructure.",
             },
             {
               issuer: "City of Irvine",
               name: "Technology Tutor",
               link: "https://www.cityofirvine.org/senior-services/lakeview-senior-center-facilities",
-              year: "September 2022 - Present",
+              year: "September 2022 - August 2025",
               image: "/experience/irvine.svg",
+              description:
+                "Provided weekly 1:1 support to seniors aged 60–85 at the Lakeview Senior Center, including Spanish-speaking residents, helping them navigate devices, apps, and everyday technology challenges.",
             },
           ].map((item) => (
             <div key={item.name} className="relative">
@@ -30,29 +34,37 @@ export function Experience() {
               />
               <div className="pt-0 flex items-center gap-2">
                 <div>
-                  <h5 className="text-xs opacity-70">{item.year}</h5>
                   <div>
-                    <h6>
-                      <b style={{ fontWeight: 600 }}>{item.issuer}</b>{" "}
-                      {item.name}
-                    </h6>
+                    <div className="flex items-center">
+                      <div>
+                        <h5 className="text-xs opacity-70">{item.year}</h5>
+                        <h6>
+                          <b style={{ fontWeight: 600 }}>{item.issuer}</b>
+                          &nbsp;&nbsp;
+                          {item.name}
+                        </h6>
+                      </div>
+                      <Image
+                        src={item.image}
+                        width={120}
+                        style={{ width: 40, height: 40 }}
+                        height={120}
+                        alt={item.name}
+                        className="ml-auto -mt-2"
+                      />
+                    </div>
+                    <p className="text-sm opacity-90 mt-1">
+                      {item.description}
+                    </p>
                     <a
                       href={item.link}
                       target="_blank"
-                      className="text-xs opacity-50 block"
+                      className="text-sm opacity-50"
                     >
                       Visit website
                     </a>
                   </div>
                 </div>
-                <Image
-                  src={item.image}
-                  width={120}
-                  style={{ width: 50, height: 50 }}
-                  height={120}
-                  alt={item.name}
-                  className="ml-auto"
-                />
               </div>
             </div>
           ))}

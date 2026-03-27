@@ -8,7 +8,8 @@ export function IntroSection() {
         California, USA
       </div>
       <h1 className="text-5xl sm:text-6xl mb-2 title max-w-xl text-orange-950">
-        I&apos;m Manu, a full stack software enthusiast.{" "}
+        Hey there, I&apos;m <br />
+        Manu Gurudath.
       </h1>
       <p className="max-w-lg opacity-90 sm:text-xl">
         With a passion for building things, I&apos;m always looking for new
@@ -61,7 +62,7 @@ export function IntroSection() {
           className="bg-green-500 text-green-950 btn flex items-center gap-3 pt-2.5 px-3"
           onClick={() =>
             window.open(
-              "https://open.spotify.com/user/gas3v326ti8fyihwazgfuup6t"
+              "https://open.spotify.com/user/gas3v326ti8fyihwazgfuup6t",
             )
           }
         >
@@ -87,4 +88,3 @@ export function IntroSection() {
     </>
   );
 }
-

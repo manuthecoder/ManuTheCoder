@@ -70,7 +70,7 @@ function Spotify() {
           <div
             onMouseOver={() => mutate()}
             className="chip bg-red-900 text-red-50 font-medium text-xs"
-            title="yes, this is actually what's playing right now!"
+            title="yes, this s what I am actually listening to!"
           >
             <div className="animate-pulse w-1.5 h-1.5 rounded-full bg-red-50"></div>
             LIVE
