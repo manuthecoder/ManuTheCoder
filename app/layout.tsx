@@ -27,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-adsense-account" content="ca-pub-4864410480154394" />
         <link rel="stylesheet" href="https://use.typekit.net/pip8swz.css" />
         <link
           rel="stylesheet"
@@ -41,21 +42,21 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org/",
               "@type": "Person",
-              "name": "Manusvath Gurudath",
-              "url": "https://bymanu.me",
-              "image":
+              name: "Manusvath Gurudath",
+              url: "https://bymanu.me",
+              image:
                 "https://media.licdn.com/dms/image/v2/D5603AQEWo60yZN1DFg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1710376372022?e=1746662400&v=beta&t=sU16Gj3n_nfRdlouLDXLzknudXxo2_xeJAWiMih6pSY",
-              "sameAs": [
+              sameAs: [
                 "https://x.com/getdysperse",
                 "https://instagram.com/dysperse",
                 "https://github.com/manuthecoder",
                 "https://linkedin.com/in/manu-codes",
                 "https://www.youtube.com/@manu-codes",
               ],
-              "jobTitle": "Software Engineer",
-              "worksFor": {
+              jobTitle: "Software Engineer",
+              worksFor: {
                 "@type": "Organization",
-                "name": "Hack Club",
+                name: "Hack Club",
               },
             }),
           }}
