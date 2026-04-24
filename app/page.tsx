@@ -8,6 +8,7 @@ import { IntroSection } from "./IntroSection";
 import { Projects } from "./Projects";
 import { Skills } from "./Skills";
 import { Analytics } from "@vercel/analytics/next";
+import { USAMap, USAStateAbbreviation } from "@mirawision/usa-map-react";
 
 function ProgressBar({ data }: { data: any }) {
   const [progress, setProgress] = useState(data?.progress_ms ?? 0);
@@ -198,6 +199,54 @@ function TvShows() {
   );
 }
 
+function StatesVisited() {
+  const states = [
+    "CA",
+    "WA",
+    "OR",
+    "NV",
+    "ID",
+    "AZ",
+    "CO",
+    "WY",
+    "MT",
+    "SC",
+    "NC",
+    "GA",
+    "NY",
+    "NJ",
+
+    // todo
+    "NH",
+    "FL",
+    "IL",
+  ];
+
+  const customStates = states.reduce((acc, state) => {
+    acc[state as USAStateAbbreviation] = {
+      fill: "#431407",
+    };
+    return acc;
+  }, {});
+
+  return (
+    <div className="w-full">
+      <h2 className="subheading mb-0.5">States visited</h2>
+      <p class="mt-0 text-sm">
+        One day, every state. And after that — the world. 😅
+      </p>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4"></div>
+      <USAMap
+        customStates={customStates}
+        defaultState={{
+          fill: "rgb(255 237 227)",
+          stroke: "#431407",
+        }}
+      />
+    </div>
+  );
+}
+
 export default function Home() {
   useEffect(() => {
     if (
@@ -252,6 +301,7 @@ export default function Home() {
               <Projects />
               <Spotify />
               <TvShows />
+              <StatesVisited />
             </div>
           </div>
         </div>
