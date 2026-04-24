@@ -15,7 +15,7 @@ export function Experience() {
               year: "May 2024 - Present",
               image: "/experience/hcb.png",
               description:
-                "Led the complete redesign of UI3, rewriting 70% of the codebase for an open-source fiscal sponsorship platform serving 1,000+ organizations. Shipped production features in Ruby on Rails across payment flows, onboarding, and core infrastructure.",
+                "Led the complete redesign of UI3, rewriting 32% of the codebase for an open-source fiscal sponsorship platform serving 1,000+ organizations. Shipped production features in Ruby on Rails across payment flows, onboarding, and core infrastructure.",
             },
             {
               issuer: "City of Irvine",
