@@ -232,10 +232,9 @@ function StatesVisited() {
   return (
     <div className="w-full">
       <h2 className="subheading mb-0.5">States visited</h2>
-      <p class="mt-0 text-sm">
+      <p class="mt-0 text-sm mb-2">
         One day, every state. And after that — the world. 😅
       </p>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4"></div>
       <USAMap
         customStates={customStates}
         defaultState={{
