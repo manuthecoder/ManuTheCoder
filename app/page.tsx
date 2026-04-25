@@ -223,6 +223,7 @@ function StatesVisited() {
   ];
 
   const customStates = states.reduce((acc, state) => {
+    // @ts-ignore
     acc[state as USAStateAbbreviation] = {
       fill: "#431407",
     };
@@ -232,7 +233,7 @@ function StatesVisited() {
   return (
     <div className="w-full">
       <h2 className="subheading mb-0.5">States visited</h2>
-      <p class="mt-0 text-sm mb-3 sm:-mb-2">
+      <p className="mt-0 text-sm mb-3 sm:-mb-2">
         One day, every state. And after that — the world. 😅
       </p>
       <USAMap
