@@ -216,10 +216,16 @@ function StatesVisited() {
     "NY",
     "NJ",
 
-    // todo
     "NH",
     "FL",
     "IL",
+    "MA",
+    "RI",
+    "CT",
+    "PA",
+    "NH",
+    "TX",
+    "VT",
   ];
 
   const customStates = states.reduce((acc, state) => {
