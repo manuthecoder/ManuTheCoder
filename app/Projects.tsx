@@ -9,6 +9,13 @@ export function Projects() {
       <div className="flex flex-col gap-3">
         {[
           {
+            name: "Waypost",
+            description: "Never have a file named asdf.png again",
+            href: "https://waypost.bymanu.me?ref=bymanu.me",
+            svg: true,
+            status: "New",
+          },
+          {
             name: "Factsify",
             description: "Your Spotify stats in a nutrition facts label",
             href: "https://factsify.bymanu.me?ref=bymanu.me",
@@ -20,15 +27,9 @@ export function Projects() {
           },
           {
             name: "ElmasriAI",
-            // status: "New",
             description: "AP physics tutoring powered by AI",
             href: "https://elmasri.bymanu.me?ref=bymanu.me",
           },
-          // {
-          //   name: "IHSMUN",
-          //   description: "Fun website for my school's Model UN club",
-          //   href: "https://github.com/manuthecoder/setup",
-          // },
         ].map((project) => (
           <a
             className="card overflow-hidden no-underline"
@@ -37,7 +38,7 @@ export function Projects() {
             target="_blank"
           >
             <Image
-              src={`/projects/${project.name.toLowerCase()}.png?ref=manu.bymanu.me`}
+              src={`/projects/${project.name.toLowerCase()}.${project.svg ? "svg" : "png"}`}
               width={50}
               height={50}
               alt={`${project.name} logo`}
@@ -47,11 +48,11 @@ export function Projects() {
             <div className="w-full min-w-0">
               <h3 className="card-title max-w-full font-bold flex items-center gap-x-3 gap-y-1 pr-20 flex-wrap-reverse">
                 <span>{project.name}</span>
-                {/*{project.status && (
+                {project.status && (
                   <div className="chip bg-orange-200 font-medium text-xs -ml-1">
                     {project.status}
                   </div>
-                )}*/}
+                )}
               </h3>
               <p className="card-subtitle mr-2">{project.description}</p>
             </div>

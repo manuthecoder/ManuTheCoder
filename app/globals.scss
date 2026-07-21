@@ -57,8 +57,8 @@ body {
     opacity: 0;
   }
   to {
-    transform: scale(1);
-    filter: blur(0);
+    transform: none;
+    filter: none;
     opacity: 1;
   }
 }
