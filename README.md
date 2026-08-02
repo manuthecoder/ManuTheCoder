@@ -26,8 +26,10 @@
 
 ### `👀 Top projects`
 
-- **[Dysperse ↗](https://dysperse.com)** - Master your momentum.
+
+- **[Waypost ↗](https://waypost.bymanu.me)** - Tag, rename, and sort your files using Apple Intelligence.
 - **[Factsify ↗](https://factsify.bymanu.me)** - Your Spotify listening habits in a nutrition facts label.
+- **[Dysperse ↗](https://dysperse.com)** - Master your momentum.
 - **[ElmasriAI ↗](https://elmasri.bymanu.me)** - AP Physics tutoring powered by AI, trained on the official CollegeBoard resources
 
 ### `✨ My workspace`
