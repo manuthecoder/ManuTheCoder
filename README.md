@@ -37,7 +37,7 @@
 
 ### `🎸 Recently Played`
 
-<img src="https://spotify-recently-played-readme.vercel.app/api?user=gas3v326ti8fyihwazgfuup6t" height="200">
+<img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=gas3v326ti8fyihwazgfuup6t" height="200">
 
 ### `📈 Stats`
 
