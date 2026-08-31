@@ -33,7 +33,7 @@
 - **[ElmasriAI ↗](https://elmasri.bymanu.me)** - AP Physics tutoring powered by AI, trained on the official CollegeBoard resources
 
 ### `✨ My workspace`
-<img src="https://github.com/user-attachments/assets/541fa393-9740-480f-a12e-0e0792e3258f" height="200">
+<img src="https://github.com/user-attachments/assets/16c13eaa-5c70-4e35-ae7d-ed1915a84c37" height="200">
 
 ### `🎸 Recently Played`
 
