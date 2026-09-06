@@ -4,42 +4,29 @@ export function Awards() {
   return (
     <div className="w-full">
       <h2 className="subheading">Education &amp; certifications</h2>
-      <div className="flex flex-col gap-2 mb-5">
-        {[
-          {
-            issuer: "University of California, Riverside",
-            name: "Computer Science",
-            detail: "Expected graduation 2030",
-          },
-          {
-            issuer: "Irvine High School",
-            name: "Graduating June 2026",
-          },
-        ].map((school: { issuer: string; name: string; detail?: string }) => (
-          <div
-            key={school.issuer}
-            className="card !cursor-text gap-4 px-4 py-3 rounded-2xl"
-          >
-            <span
-              className="material-symbols-rounded card-logo bg-orange-200 text-orange-900 flex items-center justify-center shrink-0"
-              style={{ fontSize: 24 }}
-            >
-              school
-            </span>
-            <div className="min-w-0">
-              <h3 className="leading-snug font-[600]">{school.issuer}</h3>
-              <p className="text-sm leading-snug opacity-70">
-                {school.name}
-                {school.detail && (
-                  <span className="opacity-70"> · {school.detail}</span>
-                )}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
       <div className="flex flex-col gap-4">
         {[
+          {
+            year: 2030,
+            entries: [
+              {
+                issuer: "University of California, Riverside",
+                name: "Computer Science",
+                detail: "Expected graduation 2030",
+                card: true,
+              },
+            ],
+          },
+          {
+            year: 2026,
+            entries: [
+              {
+                issuer: "Irvine High School",
+                name: "Graduating June 2026",
+                card: true,
+              },
+            ],
+          },
           {
             year: 2025,
             entries: [
@@ -114,31 +101,59 @@ export function Awards() {
                 {group.year}
               </h5>
               <div className="min-w-0 flex-1 flex flex-col gap-1 border-l-2 border-orange-200 pl-3">
-                {group.entries.map((entry) => (
-                  <a
-                    key={entry.issuer + entry.name}
-                    href={entry.link}
-                    target={entry.link ? "_blank" : undefined}
-                    className={
-                      "block rounded-xl bg-orange-100/70 px-3 py-1.5 leading-snug transition-colors " +
-                      (entry.link
-                        ? "group hover:bg-orange-200/80"
-                        : "!cursor-text")
-                    }
-                  >
-                    <b style={{ fontWeight: 600 }}>{entry.issuer}</b>
-                    &nbsp;&nbsp;
-                    <span className="text-sm opacity-70">{entry.name}</span>
-                    {entry.link && (
+                {group.entries.map((entry) =>
+                  entry.card ? (
+                    <div
+                      key={entry.issuer}
+                      className="card mb-2 !cursor-text gap-4 px-4 py-3 rounded-2xl"
+                    >
                       <span
-                        className="material-symbols-rounded align-middle ml-1 -mt-0.5 inline-block text-orange-900 opacity-0 transition-opacity group-hover:opacity-60"
-                        style={{ fontSize: 14 }}
+                        className="material-symbols-rounded card-logo bg-orange-200 text-orange-900 !flex items-center justify-center shrink-0"
+                        style={{ fontSize: 24 }}
                       >
-                        north_east
+                        school
                       </span>
-                    )}
-                  </a>
-                ))}
+                      <div className="min-w-0">
+                        <h3 className="leading-snug font-[600]">
+                          {entry.issuer}
+                        </h3>
+                        <p className="text-sm leading-snug opacity-70">
+                          {entry.name}
+                          {entry.detail && (
+                            <span className="opacity-70">
+                              {" "}
+                              · {entry.detail}
+                            </span>
+                          )}
+                        </p>
+                      </div>
+                    </div>
+                  ) : (
+                    <a
+                      key={entry.issuer + entry.name}
+                      href={entry.link}
+                      target={entry.link ? "_blank" : undefined}
+                      className={
+                        "block rounded-xl bg-orange-100/70 px-3 py-1.5 leading-snug transition-colors " +
+                        (entry.link
+                          ? "group hover:bg-orange-200/80"
+                          : "!cursor-text")
+                      }
+                    >
+                      <b style={{ fontWeight: 600 }}>{entry.issuer}</b>
+                      &nbsp;&nbsp;
+                      <span className="text-sm opacity-70">{entry.name}</span>
+                      {entry.link && (
+                        <span
+                          className="material-symbols-rounded align-middle ml-1 -mt-0.5 inline-block text-orange-900 opacity-0 transition-opacity group-hover:opacity-60"
+                          style={{ fontSize: 14 }}
+                        >
+                          north_east
+                        </span>
+                      )}
+                    </a>
+                  ),
+                )}
               </div>
             </div>
           ),
