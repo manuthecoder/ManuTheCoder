@@ -20,7 +20,7 @@ const CERTS_2025: Cert[] = [
   {
     issuer: "UCI ICS",
     name: "Machine Learning & AI",
-    href: "http://manuthecoder.github.io/assets/Adobe%20Scan%20Aug%201%2C%202025.pdf",
+    href: "http://manu-gurudath.github.io/assets/Adobe%20Scan%20Aug%201%2C%202025.pdf",
   },
   {
     issuer: "IBM",
@@ -33,7 +33,7 @@ const CERTS_2024: Cert[] = [
   {
     issuer: "UCI ICS",
     name: "Data analytics",
-    href: "https://manuthecoder.github.io/assets/ICS%20Certificate.pdf",
+    href: "https://manu-gurudath.github.io/assets/ICS%20Certificate.pdf",
   },
 ];
 

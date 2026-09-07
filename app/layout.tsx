@@ -71,7 +71,7 @@ const PERSON_SCHEMA = {
   sameAs: [
     "https://x.com/getdysperse",
     "https://instagram.com/dysperse",
-    "https://github.com/manuthecoder",
+    "https://github.com/manu-gurudath",
     "https://linkedin.com/in/manu-codes",
     "https://www.youtube.com/@manu-codes",
   ],

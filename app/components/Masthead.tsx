@@ -95,7 +95,7 @@ export function Masthead() {
         </a>
         <a
           className="masthead__link"
-          href="https://github.com/manuthecoder"
+          href="https://github.com/manu-gurudath"
           target="_blank"
           rel="noopener noreferrer"
         >
