@@ -1,0 +1,827 @@
+/* ==========================================================================
+   Design tokens — lifted verbatim from "Manu G Portfolio.dc.html"
+   ========================================================================== */
+
+:root {
+  /* Surfaces */
+  --bg: #fbf9f6;
+  --surface: #fffdfa;
+  --surface-hover: #f6f2ec;
+
+  /* Ink */
+  --ink: #1c1a17;
+  --ink-body: #4a453f;
+  --ink-muted: #6e6862;
+  --ink-soft: #8a837b;
+  --ink-faint: #a9a29a;
+  --ink-ghost: #c4bdb4;
+  --ink-ghost-2: #c9c2b8;
+
+  /* Lines */
+  --rule: #e3ded6;
+  --rule-soft: #e9e3da;
+  --rule-underline: #cfc8be;
+
+  /* Accent */
+  --accent: #a0522d;
+  --accent-line: #dfc4b2;
+
+  /* Cartography */
+  --map-land: #f1eae1;
+  --map-stroke: #dcd4c9;
+  --map-line: #d8d1c7;
+
+  /* Type */
+  /* Families are self-hosted via next/font; fallbacks match the design. */
+  --sans: var(--font-sans), Helvetica, Arial, sans-serif;
+  --serif: var(--font-serif), Georgia, serif;
+  --mono: var(--font-mono), monospace;
+
+  --ease-rise: cubic-bezier(0.22, 0.8, 0.28, 1);
+}
+
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+*::selection {
+  background: var(--accent);
+  color: var(--surface);
+}
+
+/* ==========================================================================
+   Shell
+   ========================================================================== */
+
+.page {
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  padding: 88px 28px 120px;
+}
+
+.shell {
+  max-width: 660px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 76px;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+@keyframes om-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: om-rise 620ms var(--ease-rise) both;
+}
+
+.masthead {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.masthead__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.masthead__avatar {
+  width: 32px;
+  height: 32px;
+  aspect-ratio: 32 / 32;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.masthead__where {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+}
+
+.masthead__where-sep {
+  color: var(--ink-ghost);
+}
+
+.masthead__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  text-wrap: pretty;
+  margin-top: 15px;
+}
+
+.masthead__blurb {
+  font-size: 18.5px;
+  line-height: 1.6;
+  color: var(--ink-body);
+  max-width: 44ch;
+  text-wrap: pretty;
+}
+
+.masthead__role {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+
+.masthead__links {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 2px;
+}
+
+.masthead__link {
+  font-size: 14.5px;
+  border-bottom: 1px solid var(--rule-underline);
+  padding-bottom: 2px;
+  transition: border-color 200ms ease;
+}
+
+.masthead__link:hover {
+  border-bottom-color: var(--accent);
+}
+
+.masthead__link--ghost {
+  color: var(--ink-soft);
+  border-bottom-color: transparent;
+  background: none;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  padding: 0 0 2px;
+  font: inherit;
+  font-size: 14.5px;
+  cursor: pointer;
+}
+
+.masthead__link--ghost:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.section__index {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-ghost-2);
+}
+
+.section__label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.section__rule {
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+/* ==========================================================================
+   01 — Skills
+   ========================================================================== */
+
+.skills {
+  gap: 22px;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 13px 8px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-size: 13.5px;
+  background: var(--surface);
+  transition:
+    transform 200ms ease,
+    border-color 200ms ease;
+}
+
+.skill:hover {
+  border-color: var(--ink-ghost);
+  transform: translateY(-2px);
+}
+
+.skill img {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+}
+
+/* ==========================================================================
+   02 — Education & certifications
+   ========================================================================== */
+
+.education {
+  gap: 26px;
+}
+
+/* Reproduces the design's stacked negative margins around the timeline. */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: -4px;
+  margin-bottom: -30px;
+}
+
+.timeline__row {
+  display: grid;
+  grid-template-columns: 62px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.timeline__year {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+  padding-top: 3px;
+}
+
+.timeline__items {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.timeline__school {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.timeline__school h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.timeline__school p {
+  font-size: 14.5px;
+  color: var(--ink-muted);
+}
+
+.cert {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.cert__issuer {
+  font-weight: 600;
+}
+
+.cert__name {
+  color: var(--ink-body);
+  margin-left: 9px;
+}
+
+.cert__arrow {
+  color: var(--ink-faint);
+  font-size: 12px;
+}
+
+/* ==========================================================================
+   03 — Experience
+   ========================================================================== */
+
+.experience {
+  gap: 30px;
+}
+
+.role {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.role__dates {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+.role__head {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.role__logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.role__logo--rounded {
+  border-radius: 7px;
+}
+
+.role__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.role__position {
+  color: var(--ink-soft);
+  font-size: 19px;
+  font-style: italic;
+}
+
+.role__body {
+  font-size: 15.5px;
+  line-height: 1.66;
+  color: var(--ink-body);
+  text-wrap: pretty;
+}
+
+/* ==========================================================================
+   04 — Projects
+   ========================================================================== */
+
+.projects {
+  gap: 22px;
+}
+
+.projects__head {
+  margin-top: -10px;
+}
+
+/* 1px gap over a rule-coloured backdrop draws the hairline grid. */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+
+.project {
+  background: var(--surface);
+  padding: 20px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  transition: background 220ms ease;
+}
+
+.project:hover {
+  background: var(--surface-hover);
+  color: var(--ink);
+}
+
+.project__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project__logo {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.project__name {
+  font-size: 16.5px;
+  font-weight: 500;
+}
+
+.project__badge {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent-line);
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+.project__arrow {
+  margin-left: auto;
+  color: var(--ink-ghost);
+  font-size: 12px;
+}
+
+.project__desc {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink-muted);
+}
+
+/* ==========================================================================
+   05 — Currently playing
+   ========================================================================== */
+
+.now {
+  gap: 22px;
+}
+
+.now__card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  padding: 16px 18px;
+}
+
+.now__art {
+  width: 48px;
+  height: 48px;
+  flex: none;
+  object-fit: cover;
+}
+
+/* Placeholder hatch shown until Spotify responds. */
+.now__art--placeholder {
+  background: repeating-linear-gradient(
+    135deg,
+    #f1ece4 0 6px,
+    #e7e1d7 6px 12px
+  );
+}
+
+.now__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  flex: 1;
+}
+
+/* Live badge — pulsing dot, borrowing the project badge's chrome. */
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent-line);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.live-badge__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--accent);
+  animation: live-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes live-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(0.7);
+  }
+}
+
+.now__progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.now__time {
+  flex: none;
+}
+
+.now__bar {
+  position: relative;
+  flex: 1;
+  height: 2px;
+  background: #e7e1d7;
+  overflow: hidden;
+}
+
+.now__bar-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--accent);
+  transition: width 500ms linear;
+}
+
+.now__track {
+  font-family: var(--serif);
+  font-size: 20px;
+}
+
+.now__artist {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+}
+
+/* ==========================================================================
+   06 — Favorite TV shows
+   ========================================================================== */
+
+.shows {
+  gap: 22px;
+}
+
+.shows__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 14px;
+}
+
+.show {
+  display: block;
+}
+
+.show img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  filter: saturate(0.85);
+  transition:
+    filter 260ms ease,
+    transform 260ms ease;
+}
+
+.show:hover img {
+  filter: saturate(1.1);
+  transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   07 / 08 — Maps
+   ========================================================================== */
+
+.states,
+.flights {
+  gap: 22px;
+}
+
+.states__note {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--ink-body);
+}
+
+.map-frame {
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  padding: 14px 12px;
+}
+
+.map-frame svg {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.map__caption {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 8px;
+}
+
+.map__intl {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule-soft);
+}
+
+/* The states map intentionally lets Alaska bleed past the frame, as designed. */
+.states-map svg {
+  overflow: visible;
+}
+
+.flight-map svg {
+  overflow: hidden;
+}
+
+/* Airport labels, with a halo so they stay legible over land and arcs. */
+.fm-label {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  paint-order: stroke;
+  stroke-width: 4.5px;
+  stroke-linejoin: round;
+}
+
+@keyframes fm-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Routes stay undrawn until their map scrolls into view. */
+.fm-arc {
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 2200;
+}
+
+.fm-reveal.is-visible .fm-arc {
+  animation: fm-draw 1600ms cubic-bezier(0.3, 0.75, 0.25, 1) forwards;
+}
+
+.airports {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-body);
+}
+
+.airport {
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 6px 12px;
+  transition: border-color 200ms ease;
+}
+
+.airport:hover {
+  border-color: var(--accent-line);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+  border-top: 1px solid var(--rule);
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+}
+
+/* ==========================================================================
+   Motion preferences
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .rise,
+  .live-badge__dot,
+  .fm-reveal.is-visible .fm-arc {
+    animation: none;
+  }
+
+  /* Show the finished routes rather than drawing them. */
+  .fm-arc {
+    stroke-dashoffset: 0;
+  }
+
+  .now__bar-fill {
+    transition: none;
+  }
+
+  .skill:hover,
+  .show:hover img {
+    transform: none;
+  }
+}
+
+/* ==========================================================================
+   Narrow viewports — the 58px display type is the only thing that needs to
+   give way; every other value in the design already reflows.
+   ========================================================================== */
+
+@media (max-width: 560px) {
+  .page {
+    padding: 64px 22px 96px;
+  }
+
+  .shell {
+    gap: 60px;
+  }
+
+  .masthead__title {
+    font-size: 44px;
+  }
+
+  .timeline__row {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 14px;
+  }
+}
