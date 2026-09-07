@@ -105,14 +105,10 @@ export function Awards() {
                   entry.card ? (
                     <div
                       key={entry.issuer}
-                      className="card mb-2 !cursor-text gap-4 px-4 py-3 rounded-2xl"
+                      className={
+                        "flex items-center justify-between rounded-xl bg-orange-100 px-3 py-1.5 leading-snug transition-colors "
+                      }
                     >
-                      <span
-                        className="material-symbols-rounded card-logo bg-orange-200 text-orange-900 !flex items-center justify-center shrink-0"
-                        style={{ fontSize: 24 }}
-                      >
-                        school
-                      </span>
                       <div className="min-w-0">
                         <h3 className="leading-snug font-[600]">
                           {entry.issuer}
@@ -127,6 +123,12 @@ export function Awards() {
                           )}
                         </p>
                       </div>
+                      <span
+                        className="material-symbols-rounded w-8 h-8 rounded-xl bg-orange-200/70 text-orange-900 !flex items-center justify-center shrink-0"
+                        style={{ fontSize: 24 }}
+                      >
+                        school
+                      </span>
                     </div>
                   ) : (
                     <a
@@ -134,7 +136,7 @@ export function Awards() {
                       href={entry.link}
                       target={entry.link ? "_blank" : undefined}
                       className={
-                        "block rounded-xl bg-orange-100/70 px-3 py-1.5 leading-snug transition-colors " +
+                        "block rounded-xl bg-orange-100 px-3 py-1.5 leading-snug transition-colors " +
                         (entry.link
                           ? "group hover:bg-orange-200/80"
                           : "!cursor-text")
