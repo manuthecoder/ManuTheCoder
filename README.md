@@ -4,7 +4,7 @@
 
 🔗 &nbsp;[Visit my website ↗](https://manuthecoder.bymanu.me)
 <br/>
-🔗 &nbsp;[LinkedIn ↗](https://linkedin.com/in/manu-codes)
+🔗 &nbsp;[LinkedIn ↗](https://linkedin.com/in/manu-gurudath)
 
 
 
