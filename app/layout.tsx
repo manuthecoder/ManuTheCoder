@@ -28,6 +28,14 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
 });
 
+/** Regenerate with `node scripts/generate-og.mjs`. Rendered at 2x. */
+const OG_IMAGE = {
+  url: "/og.png",
+  width: 2400,
+  height: 1260,
+  alt: "Manu Gurudath — Financial Software Engineer @ HCB, bymanu.me",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://bymanu.me"),
   title: "Manu G",
@@ -35,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "profile",
     username: "Manu G",
-    images: "/og.png",
+    images: [OG_IMAGE],
     gender: "Male",
     siteName: "Manu G",
     locale: "en_US",
@@ -47,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Manu G",
     description: "Full stack software enthusiast",
-    images: "/og.png",
+    images: [OG_IMAGE],
   },
   other: {
     "google-adsense-account": "ca-pub-4864410480154394",
