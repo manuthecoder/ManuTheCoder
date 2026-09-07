@@ -278,13 +278,3 @@ export function FlightMap() {
     </div>
   );
 }
-
-/** Every airport touched by a route, alphabetised — drives the chip row. */
-export const AIRPORT_CODES = Array.from(
-  new Set(
-    ROUTES.split(/[;\n]+/)
-      .flatMap((s) => s.split(/[-–>→,]+/))
-      .map((s) => s.trim().toUpperCase())
-      .filter((s) => Boolean(AIRPORTS[s])),
-  ),
-).sort();
