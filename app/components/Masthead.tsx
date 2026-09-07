@@ -87,7 +87,7 @@ export function Masthead() {
       <div className="masthead__links rise" style={{ animationDelay: "340ms" }}>
         <a
           className="masthead__link"
-          href="https://www.linkedin.com/in/manugurudath/"
+          href="https://www.linkedin.com/in/manu-codes/"
           target="_blank"
           rel="noopener noreferrer"
         >
