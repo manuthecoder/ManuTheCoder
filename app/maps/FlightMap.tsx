@@ -217,10 +217,10 @@ export function FlightMap() {
   const pW = geoOrthographic().rotate([-c0[0], -c0[1]]);
   pW.fitExtent(
     [
-      [80, 46],
-      [w2 - 80, h2 - 34],
+      [20, 20],
+      [w2 - 20, h2 - 20],
     ],
-    intlGeo as any,
+    { type: "Sphere" } as any,
   );
   const pathW = geoPath(pW);
   const spherePath = pathW({ type: "Sphere" } as any);
