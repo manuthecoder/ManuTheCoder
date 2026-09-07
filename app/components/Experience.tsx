@@ -24,7 +24,7 @@ export function Experience() {
         <p className="role__body">
           Built payments infrastructure in Ruby on Rails for an open-source
           fintech platform serving 6,000+ student organizations and processing
-          $480B+ in transactions. Led UI3, a full platform redesign owned end to
+          $128M+ in transactions. Led UI3, a full platform redesign owned end to
           end from UX research through production, rewriting ~32% of the
           codebase and driving 12% user growth in 6 months. Built core
           infrastructure improvements in Ruby on Rails while maintaining high
