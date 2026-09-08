@@ -141,6 +141,14 @@ export function NowPlaying() {
       ) : (
         <div className="now__card">{card}</div>
       )}
+      <a
+        className="now__follow"
+        href="https://spti.fi/manu"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Follow me on Spotify →
+      </a>
     </section>
   );
 }

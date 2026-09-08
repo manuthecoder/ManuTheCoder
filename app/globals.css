@@ -382,7 +382,11 @@ p {
 
 .cert__arrow {
   color: var(--ink-faint);
-  font-size: 12px;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -508,7 +512,9 @@ p {
 .project__arrow {
   margin-left: auto;
   color: var(--ink-ghost);
-  font-size: 12px;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
 }
 
 .project__desc {
@@ -629,6 +635,23 @@ p {
 .now__track {
   font-family: var(--serif);
   font-size: 20px;
+}
+
+.now__follow {
+  align-self: flex-start;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1px;
+  transition: color 150ms ease, border-color 150ms ease;
+}
+
+.now__follow:hover {
+  color: var(--accent);
+  border-color: var(--accent-line);
 }
 
 .now__artist {

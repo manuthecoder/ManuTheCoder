@@ -51,7 +51,7 @@ const CERTS_2023: Cert[] = [
   },
 ];
 
-/** Entries without a credential URL render as plain text, and get no ↗. */
+/** Entries without a credential URL render as plain text, and get no arrow icon. */
 function CertLine({ cert }: { cert: Cert }) {
   const inner = (
     <>
@@ -60,7 +60,19 @@ function CertLine({ cert }: { cert: Cert }) {
       {cert.href && (
         <>
           {" "}
-          <span className="cert__arrow">↗</span>
+          <svg
+            className="cert__arrow"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="8 7 17 7 17 16" />
+          </svg>
         </>
       )}
     </>
